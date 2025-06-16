@@ -1,0 +1,2752 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "PyeongChangPeace-Bold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Paperlogy";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.otf")
+      format("opentype"),
+    url("https://cdn.jsdelivr.net/gh/fonts-archive/Paperlogy/Paperlogy-4Regular.ttf")
+      format("truetype");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+body {
+  font-family: "Paperlogy";
+  background: url(../img/background.jpg);
+  /* word-break: keep-all; */
+  overflow-x: hidden;
+}
+/* header  */
+header {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 50;
+}
+/* header logo */
+header .logo h1 {
+  font-size: 1.8vw;
+}
+/*header line01  */
+header .line01 {
+  width: 70%;
+
+  border-bottom: 2px solid #222;
+}
+/* header bar */
+header .bar {
+  font-size: 3vw;
+}
+/* header modal_menu */
+header .modal_menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  display: none;
+
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;
+}
+header .modal_menu .mo_menu {
+  font-size: 2.5vw;
+}
+header .modal_menu .mo_menu > li a {
+  display: inline-block;
+  padding: 2rem 0rem;
+  color: #222;
+  transition: 0.5s;
+  font-weight: 600;
+}
+/* header menu hover*/
+header .modal_menu .mo_menu > li a:hover {
+  color: #217af4;
+}
+/*header close */
+header .close {
+  color: #fff;
+  position: absolute;
+  right: 3%;
+  top: 15px;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/*con01*/
+#con01 {
+  width: 100%;
+  height: 100vh;
+}
+/*con01 title  */
+#con01 .title {
+  width: 100%;
+
+  font-family: "PyeongChangPeace-Bold";
+  text-align: center;
+  position: relative;
+}
+#con01 .title h2 {
+  padding-top: 9rem;
+  font-size: 12vw;
+}
+#con01 .title h2 span {
+  display: block;
+  font-size: 11.5vw;
+}
+/*con01 name  */
+#con01 .name {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%) rotate(-10deg);
+  animation: ani 1s linear infinite;
+}
+@keyframes ani {
+  0% {
+    transform: translateX(-50%) rotate(-10deg) scale(0.5);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(-10deg) scale(1.5);
+  }
+}
+#con01 .name img {
+  width: 80%;
+}
+/*con01 web */
+#con01 .web {
+  width: 20%;
+  position: absolute;
+  left: 6%;
+  top: 75%;
+
+  animation: ani01 1s linear infinite;
+}
+@keyframes ani01 {
+  0% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+#con01 .web img {
+  width: 100%;
+}
+/*con01 work  */
+#con01 .work {
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  animation: ani02 1s linear infinite;
+}
+@keyframes ani02 {
+  0% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+#con01 .work img {
+  width: 120%;
+}
+/*con01 textBox  */
+#con01 .textBox {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #222;
+  border-radius: 50px;
+  box-sizing: border-box;
+  padding: 0rem 3rem;
+  margin: -50px auto;
+}
+#con01 .textBox p {
+  font-size: 2vw;
+}
+#con01 .textBox img {
+  width: 50px;
+}
+
+/*con01 bottom   */
+#con01 .bottom {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+#con01 .bottom .line02 {
+  width: 70%;
+
+  border-bottom: 2px solid #222;
+}
+#con01 .bottom p {
+  margin-left: 3rem;
+  font-size: 1.5vw;
+}
+/* con02 */
+#con02 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 3.5rem;
+
+  box-sizing: border-box;
+  margin: 0px auto;
+}
+/*con02 .aboutWrap*/
+#con02 .aboutWrap {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+/* con02 aboutWrap left */
+#con02 .aboutWrap .left {
+  width: 60%;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+/* con02 aboutMe */
+#con02 .left .aboutMe {
+  width: 100%;
+
+  position: relative;
+}
+#con02 .left .aboutMe h2 {
+  font-family: "PyeongChangPeace-Bold";
+  font-size: 9vw;
+  margin-left: 20px;
+}
+
+#con02 .left .aboutMe span {
+  display: block;
+}
+/* con02 left aboutMe design */
+#con02 .left .aboutMe .design {
+  width: 50%;
+  height: 130px;
+  position: absolute;
+  right: 15%;
+  top: 60%;
+  transform: rotate(-10deg);
+  animation: ani05 1s linear infinite;
+}
+@keyframes ani05 {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+
+  70% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* con02 left aboutMe design img */
+#con02 .left .aboutMe .design img {
+  width: 100%;
+  height: 100%;
+}
+/*con02 left textBox   */
+#con02 .left .textBox {
+  width: 95%;
+  height: 30vh;
+  border: 2px solid #222;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-size: 1.3vw;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  margin: 0px auto;
+}
+/*con02 left textBox   */
+#con02 .left .textBox .text {
+  word-break: keep-all;
+}
+/*con02 left blink  */
+#con02 .left .blink {
+  animation: blink 0.5s infinite;
+  font-size: 1.2vw;
+  color: #ff4d00;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+/*con02 right */
+#con02 .right {
+  width: 40%;
+  position: relative;
+  margin-top: 50px;
+}
+/* con02 hi */
+#con02 .right .hi {
+  width: 35%;
+  position: absolute;
+  right: 80px;
+  top: -30px;
+  animation: ani03 1s linear infinite;
+  z-index: 20;
+}
+@keyframes ani03 {
+  0% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+#con02 .right .hi img {
+  width: 100%;
+  height: 100%;
+}
+/*con02 right imgBox   */
+#con02 .right .imgBox {
+  width: 80%;
+  height: 35vw;
+}
+#con02 .right .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#con02 .right .hello {
+  width: 60%;
+  position: absolute;
+  left: -100px;
+  top: 250px;
+  animation: ani04 10s linear infinite;
+}
+@keyframes ani04 {
+  0% {
+    transform: rotate(0deg) scale(0);
+  }
+  20% {
+    transform: rotate(0deg) scale(0);
+  }
+  40% {
+    transform: rotate(360deg) scale(1);
+  }
+
+  70% {
+    transform: rotate(0deg) scale(0);
+  }
+
+  100% {
+    transform: rotate(0deg) scale(0);
+  }
+}
+#con02 .right .hello img {
+  width: 100%;
+  height: 100%;
+}
+/*con02 bottom   */
+#con02 .bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#con02 .bottom .line02 {
+  width: 78%;
+  border-bottom: 2px solid #222;
+}
+#con02 .bottom p {
+  margin-left: 3rem;
+  font-size: 1.5vw;
+}
+
+/* con03 */
+#con03 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+/*con03 bg  */
+#con03 .bg {
+  width: 20%;
+  position: absolute;
+  left: -100px;
+  top: -30px;
+}
+#con03 .bg img {
+  width: 100%;
+}
+/* con03 profile */
+#con03 .profile {
+  width: 55%;
+  margin: 0px auto;
+  padding-top: 70px;
+  box-sizing: border-box;
+  transform: rotate(-5deg);
+  margin-bottom: 20px;
+}
+#con03 .profile img {
+  width: 100%;
+}
+/* con03 bg01 */
+#con03 .bg01 {
+  width: 17%;
+  position: absolute;
+  right: -3%;
+  top: 8%;
+}
+#con03 .bg01 img {
+  width: 100%;
+}
+/* con03 textWrap  */
+#con03 .textWrap {
+  width: 100%;
+}
+/*con03 profileTop*/
+#con03 .profileTop {
+  width: 70%;
+  display: flex;
+  margin: 0px auto;
+  gap: 3rem;
+}
+/*con03 profileTop li*/
+#con03 .profileTop > li {
+  width: 50%;
+
+  height: 300px;
+  border: 2px solid #222;
+  border-radius: 30px;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px auto;
+}
+#con03 .profileTop > li h3 {
+  font-size: 2.5vw;
+  font-family: "PyeongChangPeace-Bold";
+  text-align: center;
+  margin-bottom: 50px;
+}
+#con03 .profileTop > li h2 {
+  font-size: 2.5vw;
+  font-family: "PyeongChangPeace-Bold";
+  text-align: center;
+}
+#con03 .profileTop > li p {
+  font-size: 1.4vw;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 50px;
+  text-decoration: underline;
+  color: #222;
+}
+#con03 .profileTop > li p::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #222;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* con03 profileTop > li education */
+#con03 .profileTop > li .education {
+  width: 45%;
+  position: absolute;
+  left: -100px;
+  top: -25%;
+  transform: rotate(-5deg);
+}
+#con03 .profileTop > li .education img {
+  width: 100%;
+}
+/*con03 profileTop > li skill  */
+#con03 .profileTop > li .skill {
+  width: 30%;
+  position: absolute;
+  right: -70px;
+  top: -70px;
+}
+#con03 .profileTop > li .skill img {
+  width: 100%;
+}
+#con03 .profileTop > li:nth-child(2) > img {
+  width: 65%;
+  margin: 0px auto;
+  display: block;
+}
+/*con03 profileBottom  */
+#con03 .profileBottom {
+  width: 70%;
+  display: flex;
+  margin: 3rem auto;
+  gap: 5rem;
+}
+/*con03 profileBottom  */
+#con03 .profileBottom > li {
+  width: 50%;
+
+  height: 150px;
+  border: 2px solid #222;
+  border-radius: 30px;
+  padding: 1rem;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0px auto;
+  position: relative;
+}
+/*con03 profileBottom li career */
+#con03 .profileBottom > li .career {
+  width: 30%;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+#con03 .profileBottom > li .career img {
+  width: 100%;
+}
+/*con03 profileBottom li h3 */
+#con03 .profileBottom > li h3 {
+  font-size: 2.5vw;
+  font-family: "PyeongChangPeace-Bold";
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/*con03 profileBottom li p */
+#con03 .profileBottom > li p {
+  font-size: 1.2vw;
+  margin-bottom: 1rem;
+  position: relative;
+  margin-left: 50px;
+  text-decoration: underline;
+  color: #222;
+}
+#con03 .profileBottom > li p::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #222;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/*con03 profileBottom li text01 */
+#con03 .profileBottom > li .text01 {
+  margin-left: 130px;
+}
+/*con03 profileBottom li certificate */
+#con03 .profileBottom > li .certificate {
+  width: 35%;
+  position: absolute;
+  left: -60px;
+  top: -10px;
+}
+#con03 .profileBottom > li .certificate img {
+  width: 100%;
+}
+/* con03 .profileBottom > li .txtBox03 */
+#con03 .profileBottom > li .txtBox03 {
+  position: relative;
+}
+/* con03 .profileBottom > li .txtBox03 img  */
+#con03 .profileBottom > li .txtBox03 img {
+  width: 14%;
+  position: absolute;
+  right: 17%;
+  top: -340%;
+
+  animation: ani07 5s linear infinite;
+  cursor: pointer;
+}
+@keyframes ani07 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*con03 모달창 */
+#con03 .modalCareer {
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  display: none;
+}
+#con03 .scrollBar {
+  width: 80%;
+
+  height: 83vh;
+  overflow-y: scroll;
+}
+
+#con03 .scrollBar::-webkit-scrollbar {
+  width: 12px;
+}
+#con03 .scrollBar::-webkit-scrollbar-button {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+}
+/* 위쪽 버튼 (스크롤 업) */
+#con03 .scrollBar::-webkit-scrollbar-button:vertical:start {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23217af4"><path d="M7 14l5-5 5 5z"/></svg>');
+}
+
+/* 아래쪽 버튼 (스크롤 다운) */
+#con03 .scrollBar::-webkit-scrollbar-button:vertical:end {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23217af4"><path d="M7 10l5 5 5-5z"/></svg>');
+}
+
+#con03 .scrollBar::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #217af4; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+#con03 .scrollBar::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+#con03 .modalCareer img {
+  width: 100%;
+}
+#con03 .modalCareer .close {
+  font-size: 3vw;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+  color: #222;
+}
+
+/* con04 */
+#con04 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  padding-top: 7rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* con04 illustration */
+#con04 .illustration {
+  width: 35%;
+}
+#con04 .illustration img {
+  width: 100%;
+}
+/*#con04 bg03  */
+#con04 .bg03 {
+  width: 20%;
+  position: absolute;
+  right: -130px;
+  top: 10px;
+}
+#con04 .bg03 img {
+  width: 100%;
+}
+/*#con04 bg04 */
+#con04 .bg04 {
+  width: 13%;
+  position: absolute;
+  right: 150px;
+  top: 0px;
+  transform: rotate(-180deg);
+}
+#con04 .bg04 img {
+  width: 100%;
+}
+
+/* con04  ilustWrap ilust01 */
+#con04 .ilustWrap .ilust01 {
+  width: 100%;
+}
+#con04 .ilust01 {
+  display: flex;
+  margin: 50px 0px 0px;
+}
+/* con04 ilust01 li*/
+#con04 .ilust01 > li {
+  width: 400px;
+  height: 450px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+}
+/* con04 ilust01 li img*/
+#con04 .ilust01 > li img {
+  width: 100%;
+  height: 100%;
+}
+/* con04 ilust01 li before 화살표 */
+#con04 .ilust01 > li::before {
+  width: 160px;
+  height: 160px;
+  content: "";
+  border: 1px solid #fff;
+  background: url(../img/arrow.png) no-repeat center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-radius: 50%;
+  z-index: 1s;
+  transition: 0.5s;
+  opacity: 0;
+}
+/* con04 ilust01 li after */
+#con04 .ilust01 > li::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  background: url(../img/circle.png) no-repeat center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  animation: spin 10s infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+/* con04 .ilust01 li hover */
+#con04 .ilust01 > li:hover::before {
+  opacity: 1;
+}
+#con04 .ilust01 > li:hover::after {
+  width: 160px;
+  height: 160px;
+}
+#con04 .ilust01 > li:hover {
+  filter: brightness(70%);
+}
+/* #con04 .ilust01 li 기울기 */
+#con04 .ilust01 > li.a {
+  transform: rotate(5deg);
+}
+#con04 .ilust01 > li.b {
+  transform: rotate(-5deg);
+}
+#con04 .ilust01 > li.c {
+  transform: rotate(10deg);
+}
+
+/*con04 ilustModal*/
+#con04 .ilustModal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+/* con04 ilustModal  ilust02*/
+#con04 .ilustModal .ilust02 {
+  width: 30%;
+  height: 750px;
+
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+/* #con04 ilustModal  ilust02 li*/
+#con04 .ilustModal .ilust02 > li {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+#con04 .ilustModal .ilust02 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*con04 bottom   */
+#con04 .bottom {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+}
+#con04 .bottom .line02 {
+  width: 70%;
+
+  border-bottom: 2px solid #222;
+}
+#con04 .bottom p {
+  margin-left: 3rem;
+  font-size: 1.5vw;
+}
+/* con05 */
+#con05 {
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+}
+/* con05 section */
+#con05 section {
+  width: 90%;
+  margin: 0px auto;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+/*con05  title  */
+#con05 .title {
+  width: 30%;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+#con05 .title img {
+  width: 100%;
+  display: inline-block;
+}
+/* con05 bg02 */
+#con05 .bg02 {
+  width: 300px;
+  position: absolute;
+  right: -60px;
+  top: 60px;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+#con05 .bg02 img {
+  width: 100%;
+}
+/*#con05 project cloneWrap 배경 */
+#con05 .project .cloneWrap {
+  background-color: #217af4;
+}
+#con05 .project01 .cloneWrap {
+  background-color: #6edbb0;
+}
+#con05 .project02 .cloneWrap {
+  background-color: #ddb0b4;
+}
+#con05 .project02 {
+  position: relative;
+}
+/* con05 cloneWrap  */
+#con05 .cloneWrap {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+#con05 .cloneWrap::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* con05 contBox */
+#con05 .cloneWrap .contBox {
+  display: flex;
+  justify-content: space-between;
+}
+#con05 .cloneWrap .contBox li {
+  width: 50%;
+}
+#con05 .cloneWrap .contBox li img {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+/*con05 cloneWrap contBox right  */
+#con05 .cloneWrap .contBox .right {
+  padding: 80px 0px 50px 50px;
+  box-sizing: border-box;
+}
+#con05 .cloneWrap .contBox .right .tit {
+  font-size: 5vw;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+#con05 .cloneWrap .contBox .right .tit .en2 {
+  font-size: 3vw;
+  margin-bottom: 30px;
+}
+#con05 .cloneWrap .contBox .right .txtBox {
+  width: 70%;
+  line-height: 1.5;
+}
+
+#con05 .cloneWrap .contBox .right .txtBox .en3 {
+  font-size: 1vw;
+  margin-bottom: 30px;
+}
+#con05 .cloneWrap .contBox .right .txtBox .en4 {
+  font-size: 1.2vw;
+  margin-bottom: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+#con05 .cloneWrap .contBox .right .txtBox .skill li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+#con05 .cloneWrap .contBox .right .txtBox .skill li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*con05 skillWrap */
+#con05 .skillWrap {
+  display: flex;
+  justify-content: space-between;
+}
+#con05 .skillWrap .skill {
+  width: 50%;
+}
+/*con05 skillWrap view */
+#con05 .skillWrap .view {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  background-color: #fff;
+  line-height: 50px;
+  color: #222;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 20px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#con05 .skillWrap .view01 {
+  width: 150px;
+  height: 50px;
+  font-weight: 600;
+  background-color: #fff;
+  line-height: 50px;
+  color: #222;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 20px;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+#con05 .skillWrap .view:hover {
+  color: #888;
+  background: linear-gradient(to bottom, transparent 50%, #eee 50%);
+  background-size: 100% 200%;
+  background-position: 0 bottom;
+}
+#con05 .skillWrap .view01:hover {
+  color: #888;
+  background: linear-gradient(to bottom, transparent 50%, #eee 50%);
+  background-size: 100% 200%;
+  background-position: 0 bottom;
+}
+#con05 .proposalModal {
+  width: 50%;
+
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+#con05 .proposalModal .close {
+  font-size: 4rem;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  color: #fff;
+  z-index: 2000;
+}
+#con05 .scrollBar {
+  width: 50%;
+  height: 750px;
+  overflow-y: scroll;
+}
+
+#con05 .scrollBar::-webkit-scrollbar {
+  width: 12px;
+}
+#con05 .scrollBar::-webkit-scrollbar-button {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+}
+/* 위쪽 버튼 (스크롤 업) */
+#con05 .scrollBar::-webkit-scrollbar-button:vertical:start {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23217af4"><path d="M7 14l5-5 5 5z"/></svg>');
+}
+
+/* 아래쪽 버튼 (스크롤 다운) */
+#con05 .scrollBar::-webkit-scrollbar-button:vertical:end {
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23217af4"><path d="M7 10l5 5 5-5z"/></svg>');
+}
+
+#con05 .scrollBar::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: #217af4; /* 스크롤바의 색상 */
+
+  border-radius: 10px;
+}
+
+#con05 .scrollBar::-webkit-scrollbar-track {
+  background: rgba(33, 122, 244, 0.1); /*스크롤바 뒷 배경 색상*/
+}
+
+#con05 .proposalModal img {
+  width: 100%;
+}
+
+/* con06  */
+#con06 {
+  width: 100%;
+  height: 100vh;
+}
+/* con06 contact  */
+#con06 .contact {
+  width: 90%;
+
+  margin: 0px auto;
+  padding-top: 5rem;
+  display: flex;
+  box-sizing: border-box;
+}
+/* con06 contact  li*/
+#con06 .contact li {
+  width: 100%;
+  position: relative;
+}
+/* con06 contact  li h2*/
+#con06 .contact li h2 {
+  font-size: 6vw;
+  font-family: "PyeongChangPeace-Bold";
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+#con06 .contact li span {
+  display: block;
+}
+
+/* con06 textBox02 */
+#con06 .textBox02 {
+  width: 90%;
+  height: 250px;
+  border: 2px solid #222;
+  border-radius: 30px;
+  margin: 0px auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+#con06 .textBox02 p {
+  font-size: 1.6vw;
+  letter-spacing: 3px;
+}
+/*con06 textBox02 txt02  */
+#con06 .textBox02 .txt02 {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* con06 bg07 */
+#con06 .bg07 {
+  width: 30%;
+  position: absolute;
+  left: 0px;
+  top: 400px;
+  z-index: 20;
+
+  animation: spin01 6s infinite linear;
+}
+@keyframes spin01 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#con06 .bg07 img {
+  width: 100%;
+}
+/* con06 bg08 */
+#con06 .bg08 {
+  width: 40%;
+  position: absolute;
+  right: -20px;
+  top: 100px;
+  transform: rotate(30deg);
+  z-index: 10;
+}
+#con06 .bg08 img {
+  width: 100%;
+}
+/*con06 bg09   */
+#con06 .bg09 {
+  width: 35%;
+  position: absolute;
+  left: -20px;
+  top: 40px;
+}
+#con06 .bg09 img {
+  width: 100%;
+}
+/* con06 .telContact  */
+#con06 .telContact {
+  width: 95%;
+
+  margin-top: 180px;
+  margin-left: 50px;
+}
+#con06 .telContact img {
+  width: 100%;
+}
+/*con06 bottom   */
+#con06 .bottom {
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#con06 .bottom .line02 {
+  width: 70%;
+
+  border-bottom: 2px solid #222;
+}
+#con06 .bottom p {
+  margin-left: 3rem;
+  font-size: 1.5vw;
+}
+@media (max-width: 1224px) {
+  /* header  */
+  header {
+    padding: 2rem 4rem;
+  }
+  /* header logo */
+  header .logo h1 {
+    font-size: 2vw;
+  }
+  /*con01*/
+  #con01 {
+    height: 85vh;
+  }
+
+  #con01 .name {
+    position: absolute;
+
+    top: 45%;
+  }
+  #con01 .name img {
+    width: 40%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: 2%;
+    top: 20%;
+  }
+  #con01 .work img {
+    width: 60%;
+  }
+  #con01 .web {
+    position: absolute;
+    left: 8%;
+    top: 75%;
+  }
+  #con01 .web img {
+    width: 90%;
+  }
+  /*con01 textBox  */
+  #con01 .textBox {
+    margin: -30px auto;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 90px;
+  }
+  /* con02 */
+  #con02 {
+    height: 110vh;
+    padding-top: 0rem;
+  }
+  /*con02 .aboutWrap*/
+  #con02 .aboutWrap {
+    width: 100%;
+
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    margin-top: 0rem;
+  }
+
+  #con02 .left .aboutMe h2 {
+    font-size: 12vw;
+    margin-left: 30px;
+  }
+  /*  #con02 left aboutMe design*/
+  #con02 .left .aboutMe .design {
+    width: 45%;
+    height: 100px;
+  }
+  /*con02 left textBox   */
+  #con02 .left .textBox {
+    width: 100%;
+    font-size: 1.8vw;
+    height: 25vw;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox {
+    width: 100%;
+    height: 40vw;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox img {
+    width: 100%;
+  }
+
+  /* con02 right hi */
+  #con02 .right .hi {
+    width: 40%;
+    right: 0px;
+    top: -30px;
+  }
+  /*  con02 right hello   */
+  #con02 .right .hello {
+    width: 60%;
+
+    left: -50px;
+    top: 50%;
+  }
+  /* con03 */
+  #con03 {
+    width: 100%;
+    height: 90vh;
+  }
+  /*con03 profileTop*/
+  #con03 .profileTop {
+    width: 80%;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    height: 25vh;
+    padding: 0.5rem;
+  }
+  #con03 .profileTop > li h3 {
+    font-size: 3vw;
+
+    margin-bottom: 30px;
+  }
+  #con03 .profileTop > li h2 {
+    font-size: 3vw;
+    margin-bottom: 0.5rem;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    width: 50%;
+    left: -55px;
+    top: -30%;
+  }
+  /*con03 profileTop > li skill  */
+  #con03 .profileTop > li .skill {
+    right: -50px;
+    top: -40px;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom {
+    width: 80%;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom > li {
+    height: 15vh;
+
+    padding: 0.5rem;
+  }
+  /*con03 profileBottom li h3 */
+  #con03 .profileBottom > li h3 {
+    font-size: 3vw;
+  }
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 1.5vw;
+
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 100px;
+  }
+  /*con03 profileBottom li career */
+  #con03 .profileBottom > li .career {
+    width: 35%;
+    right: -40px;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    width: 35%;
+    position: absolute;
+    left: -50px;
+    top: 10px;
+  }
+  /* con04 */
+  #con04 {
+    height: 100vh;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 40%;
+  }
+  /*#con04 bg03  */
+  #con04 .bg03 {
+    width: 20%;
+
+    right: -50px;
+    top: 10px;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 33%;
+    height: 50vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 45%;
+    height: 85vh;
+  }
+
+  /* con06  */
+  #con06 {
+    height: 100vh;
+  }
+
+  /* con06 contact  li h2*/
+  #con06 .contact li h2 {
+    font-size: 8vw;
+
+    line-height: 1.2;
+    margin-bottom: 3rem;
+  }
+  /* con06 bg07 */
+  #con06 .bg07 {
+    left: 30px;
+    top: 350px;
+  }
+  /* con06 bg08 */
+  #con06 .bg08 {
+    right: -10px;
+    top: 140px;
+  }
+  /*con06 bg09   */
+  #con06 .bg09 {
+    left: -10px;
+    top: 100px;
+  }
+  /* con06 .telContact  */
+  #con06 .telContact {
+    width: 95%;
+
+    margin-top: 200px;
+    margin-left: 30px;
+  }
+  /* con06 textBox02 */
+  #con06 .textBox02 {
+    width: 100%;
+    height: 30vh;
+  }
+  #con06 .textBox02 p {
+    font-size: 2vw;
+    letter-spacing: 3px;
+    word-break: keep-all;
+  }
+}
+@media (max-width: 950px) {
+  header .modal_menu .mo_menu {
+    font-size: 4vw;
+  }
+  /*con01*/
+  #con01 {
+    height: 70vh;
+  }
+
+  #con01 .name {
+    position: absolute;
+
+    top: 45%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: 0%;
+    top: 20%;
+  }
+  #con01 .work img {
+    width: 50%;
+  }
+  #con01 .web {
+    position: absolute;
+    left: 6%;
+    top: 75%;
+  }
+  #con01 .web img {
+    width: 80%;
+  }
+  /* con01 textBox */
+  #con01 .textBox p {
+    font-size: 2.5vw;
+  }
+  #con01 .textBox img {
+    width: 8%;
+  }
+  #con01 .bottom {
+    margin-top: 80px;
+  }
+  /* con02 */
+  #con02 {
+    width: 100%;
+    height: 70vw;
+  }
+  /*con02 .aboutWrap*/
+  #con02 .aboutWrap {
+    padding: 6rem 1rem;
+    box-sizing: border-box;
+  }
+  /* con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    width: 70%;
+    height: 130px;
+    left: 40%;
+    top: 50%;
+  }
+  /*con02 left textBox   */
+  #con02 .left .textBox {
+    height: 24vw;
+  }
+  #con02 .right .hello {
+    left: -50px;
+  }
+  /* con03 */
+  #con03 {
+    width: 100%;
+    height: 700px;
+  }
+  /*con03 profileTop*/
+  #con03 .profileTop {
+    width: 90%;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    height: 23vh;
+    padding: 0.5rem;
+  }
+  #con03 .profileTop > li h3 {
+    font-size: 3.5vw;
+
+    margin-bottom: 30px;
+  }
+  #con03 .profileTop > li h2 {
+    font-size: 3.5vw;
+    margin-bottom: 0.5rem;
+  }
+
+  /*con03 profileBottom  */
+  #con03 .profileBottom {
+    width: 90%;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom > li {
+    height: 15vh;
+
+    padding: 0.5rem;
+  }
+  /*con03 profileBottom li h3 */
+  #con03 .profileBottom > li h3 {
+    font-size: 3vw;
+  }
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 1.7vw;
+
+    margin-top: 20px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 80px;
+  }
+  /*con03 profileBottom li career */
+  #con03 .profileBottom > li .career {
+    width: 40%;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    width: 40%;
+    top: 20%;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 50%;
+  }
+  /*#con04 bg03  */
+  #con04 .bg03 {
+    width: 25%;
+    right: -70px;
+    top: 10px;
+  }
+  /*#con04 bg04 */
+  #con04 .bg04 {
+    right: 120px;
+    top: 0px;
+    transform: rotate(-180deg);
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 40%;
+    height: 50vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 55%;
+    height: 85vh;
+  }
+  /* con06 bg07 */
+  #con06 .bg07 {
+    left: 30px;
+    top: 450px;
+  }
+  /* con06 bg08 */
+  #con06 .bg08 {
+    right: -30px;
+    top: 200px;
+  }
+  /*con06 bg09   */
+  #con06 .bg09 {
+    left: -10px;
+    top: 190px;
+    z-index: 20;
+  }
+  /* con06 textBox02 */
+  #con06 .textBox02 {
+    width: 100%;
+    height: 40vh;
+  }
+  #con06 .textBox02 p {
+    font-size: 2.6vw;
+    letter-spacing: 3px;
+    word-break: keep-all;
+  }
+  /* con06 .telContact  */
+  #con06 .telContact {
+    width: 120%;
+
+    margin-top: 250px;
+    margin-left: -20px;
+  }
+}
+@media (max-width: 800px) {
+  /* header  */
+  header {
+    padding: 2rem;
+  }
+
+  /* header logo */
+  header .logo h1 {
+    font-size: 2.5vw;
+  }
+  /*con01*/
+  #con01 {
+    height: 65vw;
+  }
+  /*con01 title  */
+  #con01 .title {
+    transform: translateY(0px);
+  }
+  /* con01 name */
+  #con01 .name {
+    position: absolute;
+
+    top: 50%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: -5%;
+    top: 25%;
+  }
+  #con01 .work img {
+    width: 50%;
+  }
+  /* con01 web */
+  #con01 .web {
+    position: absolute;
+    left: 5%;
+    top: 75%;
+  }
+  #con01 .web img {
+    width: 70%;
+  }
+  /* con01 textBox */
+  #con01 .textBox p {
+    font-size: 2.8vw;
+  }
+  #con01 .textBox img {
+    width: 8%;
+  }
+  #con01 .bottom p {
+    margin-left: 2rem;
+    font-size: 2vw;
+  }
+  /* con02 */
+  #con02 {
+    height: 150vw;
+  }
+
+  #con02 .left .textBox .text {
+    font-size: 2.6vw;
+  }
+
+  /*con02 .aboutWrap*/
+  #con02 .aboutWrap {
+    display: block;
+    padding-top: 3rem;
+  }
+  /*con02 .aboutWrap h2*/
+  #con02 .left .aboutMe h2 {
+    font-size: 9.5vw;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-left: 0rem;
+  }
+  #con02 .left .aboutMe span {
+    display: inline-block;
+  }
+  /* con02 aboutWrap left */
+  #con02 .aboutWrap .left {
+    width: 100%;
+  }
+  /*  con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    width: 50%;
+
+    left: 25%;
+    top: 65%;
+  }
+  #con02 .left .textBox {
+    height: 28vw;
+    font-size: 2vw;
+    margin: 0px auto;
+  }
+  /*con02 left blink  */
+  #con02 .left .blink {
+    font-size: 2vw;
+  }
+  /*con02 right */
+  #con02 .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* con02 hi */
+  #con02 .right .hi {
+    width: 25%;
+    position: absolute;
+    right: 120px;
+    top: -30px;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox {
+    width: 70%;
+    height: 80vw;
+    margin: 0px auto;
+  }
+  /*con02 .right .hello  */
+  #con02 .right .hello {
+    width: 35%;
+    position: absolute;
+    left: 50px;
+    top: 300px;
+  }
+  /*con02 bottom   */
+  #con02 .bottom {
+    width: 100%;
+    transform: translateY(100px);
+  }
+  /* con03 */
+  #con03 {
+    width: 100%;
+    height: 600px;
+  }
+  /*con03 bg  */
+  #con03 .bg {
+    position: absolute;
+    left: -10px;
+    top: 0px;
+  }
+  #con03 .profileTop > li p {
+    font-size: 1.7vw;
+    margin-left: 30px;
+  }
+  /*con03 profileTop*/
+  #con03 .profileTop {
+    width: 90%;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    height: 20vh;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    width: 50%;
+
+    left: -45px;
+    top: -30%;
+  }
+  /*con03 profileTop > li skill  */
+  #con03 .profileTop > li .skill {
+    width: 35%;
+
+    right: -45px;
+    top: -40px;
+  }
+
+  /*con03 profileBottom  */
+  #con03 .profileBottom {
+    width: 90%;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom > li {
+    height: 13vh;
+
+    padding: 0.5rem;
+  }
+  /*con03 profileBottom li h3 */
+  #con03 .profileBottom > li h3 {
+    font-size: 3vw;
+  }
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 1.7vw;
+
+    margin-top: 20px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 50px;
+  }
+  /*con03 profileBottom li career */
+  #con03 .profileBottom > li .career {
+    width: 45%;
+    top: -40px;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    width: 45%;
+    left: -15%;
+    top: 10%;
+  }
+  #con04 {
+    height: 100vh;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 50%;
+  }
+  /*#con04 bg03  */
+  #con04 .bg03 {
+    right: -30px;
+    top: 10px;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 55%;
+    height: 60vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 65%;
+    height: 80vh;
+  }
+  /* con05 */
+  #con05 {
+    background-color: #ff4d00;
+  }
+  /* con05 section */
+  #con05 section {
+    width: 90%;
+  }
+  /* #con05 .cloneWrap .contBox .left */
+  #con05 .cloneWrap .contBox .left {
+    width: 70%;
+    height: 55vh;
+    margin: 0px auto;
+  }
+  #con05 .cloneWrap .contBox li img {
+    padding-top: 0px;
+  }
+  #con05 .cloneWrap::after {
+    display: none;
+  }
+  /* con05 contBox */
+  #con05 .cloneWrap .contBox {
+    display: block;
+  }
+  #con05 .cloneWrap .contBox li {
+    width: 100%;
+  }
+  /*con05 cloneWrap contBox right  */
+  #con05 .cloneWrap .contBox .right {
+    padding: 0px 0px 50px 50px;
+    box-sizing: border-box;
+  }
+  #con05 .cloneWrap .contBox .right .tit {
+    font-size: 7vw;
+  }
+  #con05 .cloneWrap .contBox .right .tit .en2 {
+    font-size: 5vw;
+    margin-bottom: 0px;
+  }
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 2vw;
+    margin-bottom: 30px;
+  }
+  /*con06 bottom   */
+  #con06 .bottom {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 750px) {
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 60%;
+  }
+
+  #con03 {
+    height: 65vh;
+  }
+  /* con03 .profileBottom > li .txtBox03 img  */
+  #con03 .profileBottom > li .txtBox03 img {
+    width: 20%;
+
+    right: 10%;
+    top: -200%;
+  }
+}
+@media (max-width: 600px) {
+  /* header  */
+  header {
+    padding: 2rem 1.5rem;
+  }
+
+  /* header logo */
+  header .logo h1 {
+    font-size: 3.5vw;
+  }
+  /*header line01  */
+  header .line01 {
+    width: 60%;
+  }
+
+  /* header bar */
+  header .bar {
+    font-size: 4vw;
+  }
+  /*con01*/
+  #con01 {
+    height: 52vh;
+  }
+  #con01 .title h2 {
+    padding-top: 8rem;
+  }
+  /* con01 name */
+  #con01 .name {
+    position: absolute;
+
+    top: 50%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: -8%;
+    top: 25%;
+  }
+  #con01 .work img {
+    width: 40%;
+  }
+  /* con01 web */
+  #con01 .web {
+    position: absolute;
+    left: 5%;
+    top: 75%;
+  }
+  #con01 .web img {
+    width: 70%;
+  }
+  /* con01 textBox */
+  #con01 .textBox p {
+    font-size: 2.8vw;
+  }
+  #con01 .textBox img {
+    width: 8%;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 80px;
+  }
+  #con01 .bottom p {
+    margin-left: 2rem;
+    font-size: 2vw;
+  }
+  /* con02 */
+  #con02 {
+    height: 180vw;
+  }
+  /* con02 aboutWrap left */
+  #con02 .aboutWrap .left {
+    padding-top: 0rem;
+  }
+  #con02 .left .aboutMe h2 {
+    font-size: 12vw;
+  }
+  /* con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    width: 60%;
+    left: 20%;
+    top: 70%;
+  }
+  /* con02 hi */
+  #con02 .right .hi {
+    right: 100px;
+    top: -30px;
+  }
+  /*con02 left textBox   */
+  #con02 .left .textBox {
+    height: 40vw;
+  }
+  /*con02 left textBox   */
+  #con02 .left .textBox .text {
+    font-size: 3vw;
+  }
+  /*con02 bottom  p */
+  #con02 .bottom p {
+    margin-left: 1rem;
+    font-size: 1.9vw;
+  }
+
+  /* con03 */
+  #con03 {
+    height: 200vw;
+  }
+  /* con03 profile */
+  #con03 .profile {
+    width: 70%;
+  }
+  /*con03 profileTop*/
+  #con03 .profileTop {
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    width: 80%;
+
+    height: 28vh;
+
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+  #con03 .profileTop > li h3 {
+    font-size: 5vw;
+
+    margin-bottom: 30px;
+  }
+  #con03 .profileTop > li h2 {
+    font-size: 5vw;
+  }
+  #con03 .profileTop > li p {
+    font-size: 3vw;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    left: -60px;
+    top: -30%;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom {
+    width: 100%;
+    display: block;
+    margin: 0rem auto;
+  }
+  /*con03 profileTop > li skill  */
+  #con03 .profileTop > li .skill {
+    right: -10%;
+    top: -18%;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom > li {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 2.5rem;
+  }
+  /*con03 profileBottom li career */
+  #con03 .profileBottom > li .career {
+    width: 35%;
+    right: -40px;
+    top: -35px;
+  }
+  /*con03 profileBottom li h3 */
+  #con03 .profileBottom > li h3 {
+    font-size: 5vw;
+
+    margin-bottom: 1.5rem;
+  }
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 3vw;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 90px;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    width: 40%;
+    left: -10%;
+    top: -5%;
+  }
+  /* con03 .profileBottom > li .txtBox03 img  */
+  #con03 .profileBottom > li .txtBox03 img {
+    width: 16%;
+    right: 18%;
+    top: -350%;
+  }
+  /* 모달창 */
+  #con03 .modalCareer {
+    left: 5%;
+    top: 20%;
+    display: none;
+  }
+
+  #con03 .scrollBar {
+    width: 90%;
+
+    overflow-y: scroll;
+  }
+  #con03 .modalCareer .close {
+    font-size: 6vw;
+  }
+
+  /*#con04 bg04 */
+  #con04 .bg04 {
+    right: 80px;
+    top: 0px;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 70%;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 65%;
+    height: 55vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 75%;
+    height: 80vh;
+  }
+  /* con06  */
+  #con06 {
+    height: 135vh;
+  }
+  /* con06 contact  */
+  #con06 .contact {
+    display: block;
+  }
+  /* con06 contact  li h2*/
+  #con06 .contact li h2 {
+    margin-top: 2rem;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  #con06 .contact li span {
+    display: inline-block;
+  }
+  /* con06 textBox02 */
+  #con06 .textBox02 {
+    width: 90%;
+    height: 30vh;
+  }
+  #con06 .textBox02 p {
+    font-size: 3.5vw;
+  }
+  /* con06 .telContact  */
+  #con06 .telContact {
+    width: 100%;
+
+    margin: 100px auto;
+    margin-left: 0px;
+  }
+  /* con06 bg07 */
+  #con06 .bg07 {
+    left: 0px;
+    top: 180px;
+  }
+  /* con06 bg08 */
+  #con06 .bg08 {
+    right: -20px;
+    top: -30px;
+  }
+  /*con06 bg09   */
+  #con06 .bg09 {
+    width: 35%;
+    position: absolute;
+    left: -20px;
+    top: -90px;
+  }
+  #con06 .bottom .line02 {
+    width: 60%;
+  }
+  #con06 .bottom p {
+    margin-left: 4vw;
+    font-size: 3vw;
+  }
+}
+@media (max-width: 550px) {
+  #con01 {
+    height: 46vh;
+  }
+  #con01 .title h2 {
+    padding-top: 7rem;
+  }
+  /* con01 name */
+  #con01 .name {
+    position: absolute;
+
+    top: 50%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: -10%;
+    top: 25%;
+  }
+  #con01 .work img {
+    width: 30%;
+  }
+  /*con01 web */
+  #con01 .web {
+    top: 70%;
+  }
+  #con01 .web img {
+    width: 55%;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 70px;
+  }
+  #con02 .left .aboutMe h2 {
+    font-size: 9vw;
+  }
+  /* con02 hi */
+  #con02 .right .hi {
+    right: 70px;
+    top: -30px;
+  }
+  /*con02 .right .hello  */
+  #con02 .right .hello {
+    left: 50px;
+    top: 250px;
+  }
+  /* con03 */
+  #con03 {
+    height: 110vh;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    width: 80%;
+    height: 22vh;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 85%;
+    height: 60vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 90%;
+    height: 80vh;
+  }
+}
+@media (max-width: 450px) {
+  #con01 {
+    height: 37vh;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 55px;
+  }
+  /* con02 */
+  #con02 {
+    height: 170vw;
+  }
+  /* con02 aboutWrap left */
+  #con02 .aboutWrap .left {
+    padding-top: 1rem;
+  }
+  /* con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    top: 30%;
+  }
+  /*con02 left textBox   */
+  #con02 .left .textBox {
+    height: 45vw;
+    margin-top: -20px;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox {
+    margin-top: -10px;
+  }
+  /*con02 .right .hello  */
+  #con02 .right .hello {
+    left: 50px;
+    top: 200px;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    left: -50px;
+    top: -25%;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    left: -10%;
+    top: 15%;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 80%;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 85%;
+    height: 55vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 85%;
+    height: 80vh;
+  }
+  /* con06  */
+  #con06 {
+    height: 120vh;
+  }
+}
+@media (max-width: 400px) {
+  header .modal_menu .mo_menu {
+    font-size: 7vw;
+  }
+  /* con01 */
+  #con01 {
+    height: 35vh;
+  }
+  #con01 .title h2 {
+    padding-top: 7rem;
+  }
+  /* con01 name */
+  #con01 .name {
+    position: absolute;
+
+    top: 50%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: -15%;
+    top: 25%;
+  }
+  #con01 .work img {
+    width: 30%;
+  }
+  /* con01 web */
+  #con01 .web {
+    left: 20px;
+    top: 70%;
+  }
+  #con01 .web img {
+    width: 70%;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 50px;
+  }
+  /* con02 */
+  #con02 {
+    height: 200vw;
+  }
+  /*con02 .aboutWrap*/
+  #con02 .aboutWrap {
+    padding-top: 4rem;
+  }
+  /* con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    width: 70%;
+    height: 130px;
+
+    right: -20%;
+    top: 30%;
+  }
+  /*con02 .aboutWrap h2*/
+  #con02 .left .aboutMe h2 {
+    margin-bottom: 2rem;
+  }
+  /* con02 hi */
+  #con02 .right .hi {
+    width: 35%;
+    right: 20px;
+    top: -20px;
+  }
+  #con02 .left .textBox {
+    width: 100%;
+    font-size: 3vw;
+    height: 50vw;
+    margin: 20px auto;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox {
+    margin-top: -40px;
+    width: 95%;
+    height: 100vw;
+  }
+  /* con03 */
+  #con03 {
+    height: 105vh;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    padding: 1rem;
+  }
+  #con03 .profileTop > li h3 {
+    font-size: 7vw;
+
+    margin-bottom: 30px;
+  }
+  #con03 .profileTop > li h2 {
+    font-size: 7vw;
+  }
+  #con03 .profileTop > li p {
+    font-size: 2.7vw;
+    margin-left: 40px;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    left: -40px;
+  }
+  #con03 .profileTop > li:nth-child(2) > img {
+    width: 80%;
+    margin: 10px auto;
+  }
+  /*con03 profileBottom li h3 */
+  #con03 .profileBottom > li h3 {
+    font-size: 7vw;
+
+    margin-bottom: 0.5rem;
+  }
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 2.5vw;
+
+    margin-left: 50px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 80px;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    left: -30px;
+    top: 20px;
+  }
+  /* con03 .profileBottom > li .txtBox03 img  */
+  #con03 .profileBottom > li .txtBox03 img {
+    width: 18%;
+    position: absolute;
+    right: 7%;
+    top: -500%;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 80%;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 95%;
+    height: 55vh;
+  }
+  #con04 .ilustModal .ilust02 > li {
+    top: 60%;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 85%;
+    height: 65vh;
+  }
+  /* con06  */
+  #con06 {
+    height: 135vh;
+  }
+
+  /* con06 textBox02 */
+  #con06 .textBox02 {
+    width: 90%;
+    height: 30vh;
+  }
+  #con06 .textBox02 p {
+    font-size: 4vw;
+  }
+  /* con06 .telContact  */
+  #con06 .telContact {
+    width: 100%;
+
+    margin: 50px auto;
+    margin-left: 0px;
+  }
+  /* con06 bg07 */
+  #con06 .bg07 {
+    left: 0px;
+    top: 110px;
+  }
+
+  /*con06 bg09   */
+  #con06 .bg09 {
+    left: -20px;
+    top: -60px;
+  }
+}
+@media (max-width: 350px) {
+  /* con01 */
+  #con01 {
+    height: 30vh;
+  }
+  /* con01 name */
+  #con01 .name {
+    position: absolute;
+
+    top: 50%;
+  }
+  #con01 .name img {
+    width: 30%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    position: absolute;
+    right: -25%;
+    top: 30%;
+  }
+  #con01 .work img {
+    width: 20%;
+  }
+  /* con01 web */
+  #con01 .web {
+    position: absolute;
+    left: 5%;
+    top: 65%;
+  }
+  #con01 .web img {
+    width: 55%;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 50px;
+  }
+  /* con02 */
+  #con02 {
+    height: 210vw;
+  }
+  /*con02 .aboutWrap*/
+  #con02 .aboutWrap {
+    padding-top: 1rem;
+  }
+  /* con02 aboutWrap left */
+  #con02 .aboutWrap .left {
+    width: 100%;
+    padding: 0rem;
+    box-sizing: border-box;
+  }
+  /* con02 left aboutMe design */
+  #con02 .left .aboutMe .design {
+    width: 70%;
+    height: 130px;
+
+    right: 0%;
+    top: -30%;
+  }
+  /*con02 .aboutWrap h2*/
+  #con02 .left .aboutMe h2 {
+    margin-bottom: 1rem;
+  }
+  /* con02 hi */
+  #con02 .right .hi {
+    width: 35%;
+    right: 20px;
+    top: -20px;
+  }
+  #con02 .left .textBox {
+    font-size: 5vw;
+    height: 65vw;
+    margin-bottom: 2rem;
+  }
+  /*con02 right imgBox   */
+  #con02 .right .imgBox {
+    width: 95%;
+    height: 100vw;
+  }
+  /*con02 .right .hello  */
+  #con02 .right .hello {
+    left: 50px;
+    top: 200px;
+  }
+  /* con03 */
+  #con03 {
+    height: 110vh;
+  }
+  /*con03 profileTop li*/
+  #con03 .profileTop > li {
+    width: 90%;
+    padding: 1rem;
+    height: 22vh;
+  }
+  #con03 .profileTop > li h3 {
+    margin-bottom: 20px;
+  }
+  #con03 .profileTop > li p {
+    font-size: 3.2vw;
+    margin-left: 30px;
+  }
+  /* con03 profileTop > li education */
+  #con03 .profileTop > li .education {
+    left: -25px;
+    top: -40px;
+  }
+  /*con03 profileTop > li skill  */
+  #con03 .profileTop > li .skill {
+    right: -20px;
+    top: -30px;
+  }
+  /*con03 profileBottom  */
+  #con03 .profileBottom > li {
+    width: 90%;
+
+    height: 12vh;
+  }
+
+  /*con03 profileBottom li p */
+  #con03 .profileBottom > li p {
+    font-size: 3vw;
+
+    margin-left: 50px;
+  }
+  /*con03 profileBottom li text01 */
+  #con03 .profileBottom > li .text01 {
+    margin-left: 60px;
+  }
+  /*con03 profileBottom li career */
+  #con03 .profileBottom > li .career {
+    right: -16px;
+    top: -30px;
+  }
+  /*con03 profileBottom li certificate */
+  #con03 .profileBottom > li .certificate {
+    left: -20px;
+    top: 25px;
+  }
+
+  /*#con04 bg04 */
+  #con04 .bg04 {
+    width: 20%;
+    right: 40px;
+    top: 0px;
+  }
+  /* con04 illustration */
+  #con04 .illustration {
+    width: 90%;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 110%;
+    height: 50vh;
+    margin-top: 30px;
+  }
+  #con04 .ilustModal .ilust02 > li {
+    top: 70%;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 90%;
+    height: 60vh;
+  }
+  /* con06  */
+  #con06 {
+    height: 100vh;
+  }
+  /* con06 contact  li h2*/
+  #con06 .contact li h2 {
+    margin-top: 0rem;
+  }
+  /* con06 textBox02 */
+  #con06 .textBox02 {
+    width: 90%;
+    height: 25vh;
+  }
+  #con06 .textBox02 p {
+    font-size: 4vw;
+  }
+  /* con06 .telContact  */
+  #con06 .telContact {
+    width: 100%;
+
+    margin: 100px auto;
+    margin-left: 0px;
+  }
+  /* con06 bg07 */
+  #con06 .bg07 {
+    left: 0px;
+    top: 90px;
+  }
+}
