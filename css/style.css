@@ -950,6 +950,7 @@ header .close {
 #con05 .cloneWrap .contBox {
   display: flex;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 /* con05 contBox left */
 #con05 .cloneWrap .contBox .left {
@@ -962,12 +963,41 @@ header .close {
   padding-top: 20px;
   box-sizing: border-box;
 }
+#con05 .cloneWrap .contBox .left .screen {
+  width: 90%;
+  max-width: 800px;
+  margin: 0px auto;
+  position: relative;
+}
+#con05 .cloneWrap .contBox .left .screen img {
+  width: 100%;
+}
+#con05 .cloneWrap .contBox .left .screen .folio {
+  width: 72%;
+  height: 42%;
+  position: absolute;
+  left: 110px;
+  top: 183px;
+  transition: background-position 10s linear;
+}
+#con05 .cloneWrap .contBox .left .screen .box {
+  background: url(../img/spc1.png) no-repeat center top / cover;
+}
+#con05 .cloneWrap .contBox .left .screen .box01 {
+  background: url(../img/cafe.png) no-repeat center top / cover;
+}
+#con05 .cloneWrap .contBox .left .screen .box02 {
+  background: url(../img/seoul.png) no-repeat center top / cover;
+}
+#con05 .cloneWrap .contBox .left .screen .folio.active {
+  background-position: center bottom;
+}
+
 /*con05 cloneWrap contBox right  */
 #con05 .cloneWrap .contBox .right {
   width: 50%;
   padding-left: 50px;
   box-sizing: border-box;
-  background-color: #ff4d00;
 }
 /* con05 .cloneWrap .contBox .right .tit */
 #con05 .cloneWrap .contBox .right .tit {
@@ -980,7 +1010,7 @@ header .close {
 #con05 .cloneWrap .contBox .right .txtBox {
   width: 90%;
   line-height: 1.5;
-  background-color: #ddb0b4;
+
   word-break: keep-all;
 }
 /*con05 .cloneWrap .contBox .right .tit .en2  */
@@ -1022,12 +1052,12 @@ header .close {
 #con05 .skillWrap {
   width: 100%;
   display: flex;
-  background-color: #ddb0b4;
+
   justify-content: space-between;
 }
+/* con05 .skillWrap .skill */
 #con05 .skillWrap .skill {
   width: 50%;
-  background-color: #6edbb0;
 }
 /*con05 skillWrap view */
 #con05 .skillWrap .view {
@@ -1044,6 +1074,7 @@ header .close {
   transition: 0.5s all;
   cursor: pointer;
 }
+/* con05 .skillWrap .view01 */
 #con05 .skillWrap .view01 {
   width: 150px;
   height: 50px;
@@ -1058,6 +1089,10 @@ header .close {
   transition: 0.5s all;
   cursor: pointer;
 }
+/* con05 .skillWrap .go */
+#con05 .skillWrap .go {
+  display: flex;
+}
 #con05 .skillWrap .view:hover {
   color: #888;
   background: linear-gradient(to bottom, transparent 50%, #eee 50%);
@@ -1070,6 +1105,7 @@ header .close {
   background-size: 100% 200%;
   background-position: 0 bottom;
 }
+
 #con05 .proposalModal {
   width: 50%;
 
@@ -1443,10 +1479,35 @@ header .close {
     width: 45%;
     height: 85vh;
   }
-  /* con05 section */
-  #con05 section {
-    /* height: 60vh; */
+  /*con05  title  */
+  #con05 .title {
+    width: 40%;
   }
+  /* con05 bg02 */
+  #con05 .bg02 {
+    width: 25%;
+    position: absolute;
+
+    top: 50px;
+  }
+  /* con05 .skillWrap .skill */
+  #con05 .skillWrap .skill {
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+  }
+  /*con05 skillWrap view */
+  #con05 .skillWrap .view {
+    margin-top: 30px;
+  }
+  #con05 .skillWrap .view01 {
+    width: 40%;
+    margin-top: 30px;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    left: 70px;
+    top: 120px;
+  }
+
   /* con05 .cloneWrap .contBox .right .tit */
   #con05 .cloneWrap .contBox .right .tit {
     margin-top: 70px;
@@ -1494,6 +1555,10 @@ header .close {
     font-size: 2vw;
     letter-spacing: 3px;
     word-break: keep-all;
+  }
+  /*con06 bottom   */
+  #con06 .bottom {
+    margin-top: 70px;
   }
 }
 @media (max-width: 950px) {
@@ -1647,6 +1712,41 @@ header .close {
     width: 55%;
     height: 85vh;
   }
+  /* con05 bg02 */
+  #con05 .bg02 {
+    width: 30%;
+
+    right: -60px;
+    top: 10px;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    left: 52px;
+    top: 95px;
+  }
+
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 1.5vw;
+
+    margin-bottom: 20px;
+  }
+  /*con05 skillWrap view */
+  #con05 .skillWrap .view {
+    margin-top: 0px;
+  }
+  #con05 .skillWrap .view01 {
+    width: 90%;
+    margin-top: 20px;
+  }
+  /* con05 .skillWrap .go */
+  #con05 .skillWrap .go {
+    display: block;
+  }
+  /*con05 skillWrap skill */
+  #con05 .skillWrap .skill {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+  }
   /* con06 bg07 */
   #con06 .bg07 {
     left: 30px;
@@ -1672,6 +1772,7 @@ header .close {
     font-size: 2.6vw;
     letter-spacing: 3px;
     word-break: keep-all;
+    margin-top: 40px;
   }
   /* con06 .telContact  */
   #con06 .telContact {
@@ -1906,6 +2007,7 @@ header .close {
     width: 65%;
     height: 80vh;
   }
+
   /* con05 contBox */
   #con05 .cloneWrap .contBox {
     display: block;
@@ -1913,6 +2015,7 @@ header .close {
   #con05 .cloneWrap::after {
     display: none;
   }
+
   /*con05  title  */
   #con05 .title {
     width: 50%;
@@ -1929,6 +2032,11 @@ header .close {
     width: 70%;
     margin: -40px auto;
   }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    left: 63px;
+    top: 111px;
+  }
+
   /*con05 cloneWrap contBox right  */
   #con05 .cloneWrap .contBox .right {
     width: 100%;
@@ -1939,26 +2047,52 @@ header .close {
   /* con05 .cloneWrap .contBox .right .tit */
   #con05 .cloneWrap .contBox .right .tit {
     font-size: 8vw;
-    margin-top: 0px;
+    margin-top: -70px;
   }
   /*con05 .cloneWrap .contBox .right .tit .en2  */
   #con05 .cloneWrap .contBox .right .tit .en2 {
     font-size: 5vw;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   /*con05 .cloneWrap .contBox .right .txtBox .en3  */
   #con05 .cloneWrap .contBox .right .txtBox .en3 {
     font-size: 2vw;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   /*con05 .cloneWrap .contBox .right .txtBox .en4  */
   #con05 .cloneWrap .contBox .right .txtBox .en4 {
     font-size: 2.5vw;
     margin-bottom: 10px;
   }
+
+  /*con05 skillWrap */
+  #con05 .skillWrap {
+    display: block;
+  }
+  /*con05 skillWrap view */
+  #con05 .skillWrap .view {
+    width: 40%;
+    height: 50px;
+    margin-top: 0px;
+    font-size: 2.5vw;
+  }
+  #con05 .skillWrap .view01 {
+    width: 40%;
+    margin-top: 0px;
+    font-size: 2.5vw;
+  }
+  /* con05 .skillWrap .go */
+  #con05 .skillWrap .go {
+    display: flex;
+  }
+  /* con06 contact  li h2*/
+  #con06 .contact li h2 {
+    font-size: 8vw;
+    margin-bottom: 4rem;
+  }
   /*con06 bottom   */
   #con06 .bottom {
-    margin-top: 50px;
+    margin-top: 100px;
   }
 }
 @media (max-width: 750px) {
@@ -1976,6 +2110,10 @@ header .close {
 
     right: 10%;
     top: -200%;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    left: 60px;
+    top: 105px;
   }
 }
 @media (max-width: 600px) {
@@ -1999,7 +2137,7 @@ header .close {
   }
   /*con01*/
   #con01 {
-    height: 52vh;
+    height: 45vh;
   }
   #con01 .title h2 {
     padding-top: 8rem;
@@ -2048,11 +2186,11 @@ header .close {
   }
   /* con02 */
   #con02 {
-    height: 180vw;
+    height: 110vh;
   }
   /* con02 aboutWrap left */
   #con02 .aboutWrap .left {
-    padding-top: 0rem;
+    padding-top: 1rem;
   }
   #con02 .left .aboutMe h2 {
     font-size: 12vw;
@@ -2201,17 +2339,33 @@ header .close {
   }
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
-    width: 65%;
-    height: 55vh;
+    width: 70%;
+    height: 51vh;
+    margin-top: 50px;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
     width: 75%;
-    height: 80vh;
+    height: 70vh;
+    top: 120px;
   }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    width: 71%;
+    left: 48px;
+    top: 85px;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 2.7vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 3vw;
+  }
+
   /* con06  */
   #con06 {
-    height: 135vh;
+    height: 120vh;
   }
   /* con06 contact  */
   #con06 .contact {
@@ -2270,7 +2424,7 @@ header .close {
 }
 @media (max-width: 550px) {
   #con01 {
-    height: 46vh;
+    height: 40vh;
   }
   #con01 .title h2 {
     padding-top: 7rem;
@@ -2304,6 +2458,9 @@ header .close {
   #con01 .bottom {
     margin-top: 70px;
   }
+  #con02 {
+    height: 100vh;
+  }
   #con02 .left .aboutMe h2 {
     font-size: 9vw;
   }
@@ -2336,10 +2493,33 @@ header .close {
     width: 90%;
     height: 80vh;
   }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    width: 71%;
+    height: 41%;
+    left: 43px;
+    top: 81px;
+  }
+  /* con05 contBox left */
+  #con05 .cloneWrap .contBox .left {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 2.8vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 3.2vw;
+  }
+  /* con06  */
+  #con06 {
+    height: 120vh;
+  }
 }
 @media (max-width: 450px) {
   #con01 {
-    height: 37vh;
+    height: 35vh;
   }
   /*con01 bottom   */
   #con01 .bottom {
@@ -2387,17 +2567,47 @@ header .close {
   }
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
+    margin-top: 100px;
     width: 85%;
-    height: 55vh;
+    height: 45vh;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
     width: 85%;
     height: 80vh;
   }
+  /*con05  title  */
+  #con05 .title {
+    width: 70%;
+  }
+  /* con05 bg02 */
+  #con05 .bg02 {
+    right: -20px;
+    top: 70px;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    width: 71%;
+    height: 40%;
+    left: 35px;
+    top: 72px;
+  }
+  /* con05 contBox left */
+  #con05 .cloneWrap .contBox .left {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 3vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 3.5vw;
+  }
   /* con06  */
   #con06 {
-    height: 120vh;
+    height: 105vh;
+    margin-top: -150px;
   }
 }
 @media (max-width: 400px) {
@@ -2542,19 +2752,58 @@ header .close {
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
     width: 95%;
-    height: 55vh;
+    height: 45vh;
+    margin-top: 100px;
   }
   #con04 .ilustModal .ilust02 > li {
-    top: 60%;
+    top: 70%;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
-    width: 85%;
-    height: 65vh;
+    width: 90%;
+    height: 55vh;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    width: 71%;
+    height: 40%;
+    left: 32px;
+    top: 65px;
+  }
+  /* con05 contBox left */
+  #con05 .cloneWrap .contBox .left {
+    margin-bottom: 0rem;
+  }
+  /* con05 .cloneWrap .contBox .right .tit */
+  #con05 .cloneWrap .contBox .right .tit {
+    font-size: 9vw;
+    margin-top: -30px;
+  }
+  /*con05 cloneWrap contBox right  */
+  #con05 .cloneWrap .contBox .right {
+    width: 100%;
+    padding-left: 20px;
+  }
+  /*con05 .cloneWrap .contBox .right .tit .en2  */
+  #con05 .cloneWrap .contBox .right .tit .en2 {
+    font-size: 7vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 3.5vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 4vw;
+  }
+  /*con05 skillWrap skill */
+  #con05 .skillWrap .skill {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 20px;
   }
   /* con06  */
   #con06 {
-    height: 135vh;
+    height: 100vh;
   }
 
   /* con06 textBox02 */
@@ -2569,8 +2818,12 @@ header .close {
   #con06 .telContact {
     width: 100%;
 
-    margin: 50px auto;
+    margin: 100px auto;
     margin-left: 0px;
+  }
+  /*  con06 .textBox02 p  */
+  #con06 .textBox02 p {
+    margin-top: 25px;
   }
   /* con06 bg07 */
   #con06 .bg07 {
@@ -2582,6 +2835,10 @@ header .close {
   #con06 .bg09 {
     left: -20px;
     top: -60px;
+  }
+  /*con06 bottom   */
+  #con06 .bottom {
+    margin-top: -30px;
   }
 }
 @media (max-width: 350px) {
@@ -2745,6 +3002,40 @@ header .close {
   #con04 .ilustModal .ilust02 {
     width: 90%;
     height: 60vh;
+  }
+  #con05 .cloneWrap .contBox .left .screen .folio {
+    width: 70%;
+    height: 38%;
+    left: 25px;
+    top: 56px;
+  }
+  /* con05 .cloneWrap .contBox .right .tit */
+  #con05 .cloneWrap .contBox .right .tit {
+    font-size: 9vw;
+    margin-top: 20px;
+  }
+  /*con05 cloneWrap contBox right  */
+  #con05 .cloneWrap .contBox .right {
+    width: 100%;
+    padding-left: 20px;
+  }
+  /*con05 .cloneWrap .contBox .right .tit .en2  */
+  #con05 .cloneWrap .contBox .right .tit .en2 {
+    font-size: 7vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
+  #con05 .cloneWrap .contBox .right .txtBox .en3 {
+    font-size: 4vw;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 4vw;
+  }
+  /*con05 skillWrap skill */
+  #con05 .skillWrap .skill {
+    width: 100%;
+    font-size: 4vw;
+    margin-bottom: 20px;
   }
   /* con06  */
   #con06 {

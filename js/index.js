@@ -2,6 +2,7 @@ $(function () {
   let con01 = $("#con01").offset().top;
   let con02 = $("#con02").offset().top;
   let con03 = $("#con03").offset().top;
+
   // scroll
   const content =
     "안녕하세요.\n 책임감과 성실함으로 디자인을 완성하는 웹디자이너 안미나 입니다. \n 보기 좋고 실용적인 웹사이트를 만들고 싶은 마음으로 웹디자이너가 되고싶습니다. 앞으로도 꾸준히 배우고 성장하면 저만의 색을 담은  웹디자이너를 해 나가고 싶습니다.";
@@ -21,6 +22,17 @@ $(function () {
   $(window).on("scroll", function () {
     let sc = $(this).scrollTop();
     console.log(sc);
+
+    const contBox = $(".cloneWrap").offset().top;
+
+    // folio 활성화
+    if (sc >= contBox) {
+      $("#con05 .cloneWrap .contBox .left .screen .folio").addClass("active");
+    } else {
+      $("#con05 .cloneWrap .contBox .left .screen .folio").removeClass(
+        "active"
+      );
+    }
 
     if (sc >= con01 && sc < con02 && !start) {
       $("#con01 .inner .left").addClass("on");
@@ -226,8 +238,38 @@ $(function () {
         .timeline({
           scrollTrigger: {
             trigger: "#con06",
-            start: "0% 0%",
-            end: "0% 0%",
+            start: "180% 50%",
+            end: "200% 50%",
+            scrub: 2,
+            // markers: true,
+          },
+        })
+        .fromTo(
+          "#con06 h2",
+          { y: "50%", opacity: 0 },
+          { y: "0%", opacity: 1, ease: "none", duration: 5 },
+          1
+        )
+        .fromTo(
+          "#con06 .telContact",
+          { y: "50%", opacity: 0 },
+          { y: "0%", opacity: 1, ease: "none", duration: 5 },
+          2
+        )
+        .fromTo(
+          "#con06 .textBox02",
+          { y: "50%", opacity: 0 },
+          { y: "0%", opacity: 1, ease: "none", duration: 5 },
+          3
+        );
+    },
+    "(max-width:400px)": function () {
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: "#con06",
+            start: "100% 0%",
+            end: "100% 0%",
             scrub: 2,
             markers: true,
           },
