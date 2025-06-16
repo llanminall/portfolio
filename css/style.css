@@ -882,7 +882,6 @@ header .close {
 /* con05 */
 #con05 {
   width: 100%;
-
   overflow: hidden;
   position: relative;
 }
@@ -952,10 +951,11 @@ header .close {
   display: flex;
   justify-content: space-between;
 }
-#con05 .cloneWrap .contBox li {
+/* con05 contBox left */
+#con05 .cloneWrap .contBox .left {
   width: 50%;
 }
-#con05 .cloneWrap .contBox li img {
+#con05 .cloneWrap .contBox .left img {
   width: 100%;
   display: block;
   margin: 0px auto;
@@ -964,28 +964,36 @@ header .close {
 }
 /*con05 cloneWrap contBox right  */
 #con05 .cloneWrap .contBox .right {
-  padding: 80px 0px 50px 50px;
+  width: 50%;
+  padding-left: 50px;
   box-sizing: border-box;
+  background-color: #ff4d00;
 }
+/* con05 .cloneWrap .contBox .right .tit */
 #con05 .cloneWrap .contBox .right .tit {
   font-size: 5vw;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-top: 150px;
   font-weight: 600;
 }
+/* con05 .cloneWrap .contBox .right .txtBox */
+#con05 .cloneWrap .contBox .right .txtBox {
+  width: 90%;
+  line-height: 1.5;
+  background-color: #ddb0b4;
+  word-break: keep-all;
+}
+/*con05 .cloneWrap .contBox .right .tit .en2  */
 #con05 .cloneWrap .contBox .right .tit .en2 {
   font-size: 3vw;
   margin-bottom: 30px;
 }
-#con05 .cloneWrap .contBox .right .txtBox {
-  width: 70%;
-  line-height: 1.5;
-}
-
+/*con05 .cloneWrap .contBox .right .txtBox .en3  */
 #con05 .cloneWrap .contBox .right .txtBox .en3 {
   font-size: 1vw;
   margin-bottom: 30px;
 }
+/*con05 .cloneWrap .contBox .right .txtBox .en4  */
 #con05 .cloneWrap .contBox .right .txtBox .en4 {
   font-size: 1.2vw;
   margin-bottom: 30px;
@@ -1012,11 +1020,14 @@ header .close {
 
 /*con05 skillWrap */
 #con05 .skillWrap {
+  width: 100%;
   display: flex;
+  background-color: #ddb0b4;
   justify-content: space-between;
 }
 #con05 .skillWrap .skill {
   width: 50%;
+  background-color: #6edbb0;
 }
 /*con05 skillWrap view */
 #con05 .skillWrap .view {
@@ -1432,7 +1443,14 @@ header .close {
     width: 45%;
     height: 85vh;
   }
-
+  /* con05 section */
+  #con05 section {
+    /* height: 60vh; */
+  }
+  /* con05 .cloneWrap .contBox .right .tit */
+  #con05 .cloneWrap .contBox .right .tit {
+    margin-top: 70px;
+  }
   /* con06  */
   #con06 {
     height: 100vh;
@@ -1888,48 +1906,55 @@ header .close {
     width: 65%;
     height: 80vh;
   }
-  /* con05 */
-  #con05 {
-    background-color: #ff4d00;
-  }
-  /* con05 section */
-  #con05 section {
-    width: 90%;
-  }
-  /* #con05 .cloneWrap .contBox .left */
-  #con05 .cloneWrap .contBox .left {
-    width: 70%;
-    height: 55vh;
-    margin: 0px auto;
-  }
-  #con05 .cloneWrap .contBox li img {
-    padding-top: 0px;
-  }
-  #con05 .cloneWrap::after {
-    display: none;
-  }
   /* con05 contBox */
   #con05 .cloneWrap .contBox {
     display: block;
   }
-  #con05 .cloneWrap .contBox li {
-    width: 100%;
+  #con05 .cloneWrap::after {
+    display: none;
+  }
+  /*con05  title  */
+  #con05 .title {
+    width: 50%;
+    margin-top: 4rem;
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+  /* con05 bg02 */
+  #con05 .bg02 {
+    width: 30%;
+  }
+  /* con05 contBox left */
+  #con05 .cloneWrap .contBox .left {
+    width: 70%;
+    margin: -40px auto;
   }
   /*con05 cloneWrap contBox right  */
   #con05 .cloneWrap .contBox .right {
-    padding: 0px 0px 50px 50px;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 30px;
     box-sizing: border-box;
   }
+  /* con05 .cloneWrap .contBox .right .tit */
   #con05 .cloneWrap .contBox .right .tit {
-    font-size: 7vw;
+    font-size: 8vw;
+    margin-top: 0px;
   }
+  /*con05 .cloneWrap .contBox .right .tit .en2  */
   #con05 .cloneWrap .contBox .right .tit .en2 {
     font-size: 5vw;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
   }
+  /*con05 .cloneWrap .contBox .right .txtBox .en3  */
   #con05 .cloneWrap .contBox .right .txtBox .en3 {
     font-size: 2vw;
     margin-bottom: 30px;
+  }
+  /*con05 .cloneWrap .contBox .right .txtBox .en4  */
+  #con05 .cloneWrap .contBox .right .txtBox .en4 {
+    font-size: 2.5vw;
+    margin-bottom: 10px;
   }
   /*con06 bottom   */
   #con06 .bottom {
