@@ -22,16 +22,27 @@ $(function () {
   $(window).on("scroll", function () {
     let sc = $(this).scrollTop();
     console.log(sc);
+    base = -100;
 
-    const contBox = $(".cloneWrap").offset().top;
-
-    // folio 활성화
-    if (sc >= contBox) {
-      $("#con05 .cloneWrap .contBox .left .screen .folio").addClass("active");
+    let project = $(".project").offset().top;
+    let project01 = $(".project01").offset().top;
+    let project02 = $(".project02").offset().top;
+    if (sc >= project + base) {
+      $(".project .folio").addClass("active");
     } else {
-      $("#con05 .cloneWrap .contBox .left .screen .folio").removeClass(
-        "active"
-      );
+      $(".project .folio").removeClass("active");
+    }
+
+    if (sc >= project01 + base) {
+      $(".project01 .folio").addClass("active");
+    } else {
+      $(".project01 .folio").removeClass("active");
+    }
+
+    if (sc >= project02 + base) {
+      $(".project02 .folio").addClass("active");
+    } else {
+      $(".project02 .folio").removeClass("active");
     }
 
     if (sc >= con01 && sc < con02 && !start) {
@@ -126,7 +137,7 @@ $(function () {
       gsap
         .timeline({
           scrollTrigger: {
-            trigger: "#con06",
+            trigger: "#con07",
             start: "0% 50%",
             end: "50% 50%",
             scrub: 2,
@@ -134,19 +145,19 @@ $(function () {
           },
         })
         .fromTo(
-          "#con06 h2",
+          "#con07 h2",
           { y: "50%", opacity: 0 },
           { y: "0%", opacity: 1, ease: "none", duration: 5 },
           1
         )
         .fromTo(
-          "#con06 .telContact",
+          "#con07 .telContact",
           { y: "50%", opacity: 0 },
           { y: "0%", opacity: 1, ease: "none", duration: 5 },
           2
         )
         .fromTo(
-          "#con06 .textBox02",
+          "#con07 .textBox02",
           { y: "50%", opacity: 0 },
           { y: "0%", opacity: 1, ease: "none", duration: 5 },
           3
@@ -359,7 +370,43 @@ $(function () {
       height: "0%",
     });
   });
+
   //con05
+  slide();
+  function slide() {
+    start = setInterval(function () {
+      $("#con05 .contBox01").animate(
+        { "margin-left": "-100%" },
+        1000,
+        function () {
+          $(" #con05 .contBox01 > li:first-child").appendTo(
+            "#con05 .contBox01"
+          );
+          $("#con05 .contBox01").css({ "margin-left": "0" });
+        }
+      );
+    }, 3000);
+  }
+  $("#con05 .next").on("click", function () {
+    clearInterval(start);
+    $("#con05 .contBox01").animate(
+      { "margin-left": "-100%" },
+      200,
+      function () {
+        $("#con05 .contBox01 > li:first-child").appendTo("ul");
+        $("#con05 .contBox01").css({ "margin-left": "0" });
+      }
+    );
+    slide();
+  });
+  $("#con05 .prev").on("click", function () {
+    clearInterval(start);
+    $("#con05 .contBox01 > li:last-child").prependTo("#con05 .contBox01");
+    $("#con05 .contBox01").css({ "margin-left": "-100%" });
+    $("#con05 .contBox01").animate({ "margin-left": "0" });
+    slide();
+  });
+  //con06
   gsap.utils.toArray("section").forEach((section, k) => {
     gsap.timeline({
       scrollTrigger: {
@@ -372,10 +419,10 @@ $(function () {
     });
   });
 
-  $("#con05 .view01  ").on("click", function () {
-    $("#con05 .proposalModal").show();
+  $("#con06 .view01  ").on("click", function () {
+    $("#con06 .proposalModal").show();
   });
-  $("#con05 .proposalModal .close").on("click", function () {
-    $("#con05 .proposalModal").hide();
+  $("#con06 .proposalModal .close").on("click", function () {
+    $("#con06 .proposalModal").hide();
   });
 });
