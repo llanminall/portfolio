@@ -2607,7 +2607,6 @@ header .close {
   /* con06  */
   #con06 {
     height: 105vh;
-    margin-top: -150px;
   }
 }
 @media (max-width: 400px) {
