@@ -46,8 +46,6 @@ $(function () {
     }
 
     if (sc >= con01 && sc < con02 && !start) {
-      $("#con01 .inner .left").addClass("on");
-      $("#con01 .inner .right").addClass("on");
       start = true;
       stop = setInterval(typing, 80);
     }
@@ -374,7 +372,7 @@ $(function () {
   //con05
   slide();
   function slide() {
-    start = setInterval(function () {
+    start01 = setInterval(function () {
       $("#con05 .contBox01").animate(
         { "margin-left": "-100%" },
         1000,
@@ -388,7 +386,7 @@ $(function () {
     }, 3000);
   }
   $("#con05 .next").on("click", function () {
-    clearInterval(start);
+    clearInterval(start01);
     $("#con05 .contBox01").animate(
       { "margin-left": "-100%" },
       200,
@@ -400,7 +398,7 @@ $(function () {
     slide();
   });
   $("#con05 .prev").on("click", function () {
-    clearInterval(start);
+    clearInterval(start01);
     $("#con05 .contBox01 > li:last-child").prependTo("#con05 .contBox01");
     $("#con05 .contBox01").css({ "margin-left": "-100%" });
     $("#con05 .contBox01").animate({ "margin-left": "0" });
