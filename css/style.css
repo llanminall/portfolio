@@ -519,6 +519,7 @@ header .close {
   font-family: "PyeongChangPeace-Bold";
   text-align: center;
 }
+
 #con03 .profileTop > li p {
   font-size: 1.4vw;
   margin-bottom: 1rem;
@@ -1427,7 +1428,6 @@ header .close {
   #con01 {
     padding-top: 9rem;
     box-sizing: border-box;
-    background-color: #217af4;
   }
   #con01 .mainWrap {
     width: 100%;
@@ -1595,7 +1595,6 @@ header .close {
   }
   /* con04 */
   #con04 {
-    background-color: #217af4;
   }
   /* con04 illustration */
   #con04 .illustration {
@@ -2488,7 +2487,7 @@ header .close {
   #con04 .ilust01 > li {
     width: 70%;
     height: 51vh;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
@@ -2632,8 +2631,8 @@ header .close {
   }
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
-    width: 85%;
-    height: 60vh;
+    width: 75%;
+    height: 50vh;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
@@ -2720,6 +2719,19 @@ header .close {
   #con02 .left .aboutMe h2 {
     font-size: 13vw;
   }
+  #con03 .profileTop > li p {
+    margin-left: 30px;
+  }
+  /* con04 ilust01 li*/
+  #con04 .ilust01 > li {
+    width: 80%;
+    height: 50vh;
+  }
+  /* con04 ilustModal  ilust02*/
+  #con04 .ilustModal .ilust02 {
+    width: 90%;
+    height: 70vh;
+  }
 }
 @media (max-width: 450px) {
   #con02 {
@@ -2763,7 +2775,7 @@ header .close {
   }
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
-    margin-top: 100px;
+    margin-top: 30px;
     width: 85%;
     height: 45vh;
   }
@@ -2955,7 +2967,7 @@ header .close {
   #con04 .ilust01 > li {
     width: 95%;
     height: 45vh;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   #con04 .ilustModal .ilust02 > li {
     top: 70%;
@@ -3201,17 +3213,17 @@ header .close {
   }
   /* con04 ilust01 li*/
   #con04 .ilust01 > li {
-    width: 110%;
+    width: 120%;
     height: 50vh;
     margin-top: 30px;
   }
   #con04 .ilustModal .ilust02 > li {
-    top: 70%;
+    top: 80%;
   }
   /* con04 ilustModal  ilust02*/
   #con04 .ilustModal .ilust02 {
     width: 90%;
-    height: 60vh;
+    height: 50vh;
   }
   /* con05 */
   #con05 {
