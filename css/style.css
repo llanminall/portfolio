@@ -108,6 +108,14 @@ header .close {
 #con01 {
   width: 100%;
   height: 100vh;
+  background-color: #217af4;
+  padding-top: 8rem;
+  box-sizing: border-box;
+}
+/*con01 mainWrap */
+#con01 .mainWrap {
+  width: 100%;
+  background-color: #ddb0b4;
 }
 /*con01 title  */
 #con01 .title {
@@ -117,8 +125,8 @@ header .close {
   text-align: center;
   position: relative;
 }
+/*con01 title h2 */
 #con01 .title h2 {
-  padding-top: 9rem;
   font-size: 12vw;
 }
 #con01 .title h2 span {
@@ -214,9 +222,10 @@ header .close {
   justify-content: space-between;
   border: 2px solid #222;
   border-radius: 50px;
-  box-sizing: border-box;
+
   padding: 0rem 3rem;
-  margin: -50px auto;
+  margin: 0px auto;
+  box-sizing: border-box;
 }
 #con01 .textBox p {
   font-size: 2vw;
@@ -232,7 +241,7 @@ header .close {
 
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 60px;
 }
 #con01 .bottom .line02 {
   width: 70%;
@@ -1405,7 +1414,7 @@ header .close {
 @media (max-width: 1224px) {
   /* header  */
   header {
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
   }
   /* header logo */
   header .logo h1 {
@@ -1417,51 +1426,50 @@ header .close {
   }
   /*con01*/
   #con01 {
-    height: 90vh;
-    background-color: #217af4;
+    padding-top: 7rem;
+    box-sizing: border-box;
   }
+  #con01 .mainWrap {
+    width: 100%;
 
+    padding: 4rem 0rem;
+    box-sizing: border-box;
+  }
+  /*con01 title h2 */
+  #con01 .title h2 {
+    font-size: 14vw;
+  }
+  #con01 .title h2 span {
+    font-size: 13vw;
+  }
+  /*con01 name  */
   #con01 .name {
-    position: absolute;
-
-    top: 45%;
+    left: 50%;
+    top: 30%;
   }
+
   #con01 .name img {
-    width: 40%;
+    width: 60%;
+  }
+  /*con01 web */
+  #con01 .web {
+    left: 2%;
+    top: 65%;
   }
   /*con01 work  */
   #con01 .work {
-    position: absolute;
-    right: -3%;
-    top: 20%;
+    right: 0%;
+    top: -15%;
   }
   #con01 .work img {
-    width: 60%;
-  }
-  #con01 .web {
-    position: absolute;
-    left: 5%;
-    top: 75%;
-  }
-  #con01 .web img {
-    width: 90%;
-  }
-  /*con01 title  */
-  #con01 .title {
-    /* background-color: #ddb0b4; */
-  }
-
-  #con01 .title h2 {
-    padding-top: 12rem;
-    font-size: 14vw;
-  }
-  /*con01 textBox  */
-  #con01 .textBox {
-    margin: 30px auto;
+    width: 100%;
   }
   /*con01 bottom   */
   #con01 .bottom {
-    margin-top: 90px;
+    background-color: #ff4d00;
+  }
+  #con01 .bottom p {
+    font-size: 2vw;
   }
   /* con02 */
   #con02 {
@@ -1708,51 +1716,19 @@ header .close {
   }
   /*con01*/
   #con01 {
-    height: 75vh;
+    height: 78vh;
   }
 
-  #con01 .name {
-    position: absolute;
-
-    top: 45%;
-  }
   #con01 .name img {
-    width: 30%;
+    width: 45%;
   }
   /*con01 work  */
   #con01 .work {
-    position: absolute;
-    right: -5%;
-    top: 25%;
+    right: -3%;
+    top: -15%;
   }
   #con01 .work img {
-    width: 50%;
-  }
-  #con01 .web {
-    position: absolute;
-    left: 6%;
-    top: 75%;
-  }
-  #con01 .web img {
-    width: 80%;
-  }
-  /*con01 .title h2*/
-  #con01 .title h2 {
-    padding-top: 11rem;
-  }
-  /* con01 textBox */
-  #con01 .textBox {
-    margin-top: -20px;
-  }
-  /* con01 textBox */
-  #con01 .textBox p {
-    font-size: 2.5vw;
-  }
-  #con01 .textBox img {
-    width: 8%;
-  }
-  #con01 .bottom {
-    margin-top: 80px;
+    width: 70%;
   }
   /* con02 */
   #con02 {
@@ -1990,54 +1966,26 @@ header .close {
   header .logo h1 {
     font-size: 2.5vw;
   }
-  /*con01*/
   #con01 {
-    height: 65vw;
-  }
-  #con01 .title h2 {
-    padding-top: 8rem;
-  }
-  /* con01 name */
-  #con01 .name {
-    position: absolute;
-
-    top: 50%;
-  }
-  #con01 .name img {
-    width: 30%;
+    height: 68vh;
+    padding-top: 5rem;
   }
   /*con01 work  */
   #con01 .work {
-    position: absolute;
     right: -5%;
-    top: 20%;
+    top: -15%;
   }
   #con01 .work img {
-    width: 50%;
+    width: 55%;
   }
-  /* con01 web */
-  #con01 .web {
-    position: absolute;
-    left: 5%;
-    top: 75%;
+  /*con01 textBox  */
+  #con01 .textBox {
+    width: 80%;
   }
-  #con01 .web img {
-    width: 70%;
-  }
-  /* con01 textBox */
   #con01 .textBox p {
-    font-size: 2.8vw;
+    font-size: 3vw;
   }
-  #con01 .textBox img {
-    width: 8%;
-  }
-  #con01 .bottom {
-    margin-top: 40px;
-  }
-  #con01 .bottom p {
-    margin-left: 2rem;
-    font-size: 2vw;
-  }
+
   /* con02 */
   #con02 {
     height: 150vw;
@@ -2299,10 +2247,6 @@ header .close {
   }
 }
 @media (max-width: 750px) {
-  /* con01 */
-  #con01 {
-    height: 55vh;
-  }
   /* con04 illustration */
   #con04 .illustration {
     width: 60%;
@@ -2338,58 +2282,43 @@ header .close {
   header .line01 {
     width: 60%;
   }
-
   /* header bar */
   header .bar {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   /*con01*/
   #con01 {
-    height: 45vh;
-    padding-bottom: 50px;
+    height: 55vh;
   }
-  #con01 .title h2 {
-    padding-top: 8rem;
-  }
-  /* con01 name */
+  /*con01 name  */
   #con01 .name {
-    position: absolute;
-
-    top: 50%;
+    top: 10%;
   }
   #con01 .name img {
-    width: 30%;
+    width: 50%;
+  }
+  /*con01 web */
+  #con01 .web {
+    left: 0%;
+    top: 55%;
   }
   /*con01 work  */
   #con01 .work {
     position: absolute;
     right: -9%;
-    top: 25%;
+    top: -30%;
   }
   #con01 .work img {
-    width: 40%;
+    width: 50%;
   }
-  /* con01 web */
-  #con01 .web {
-    position: absolute;
-    left: 5%;
-    top: 75%;
-  }
-  #con01 .web img {
-    width: 70%;
-  }
-  /* con01 textBox */
-  #con01 .textBox p {
-    font-size: 2.8vw;
+  /*con01 textBox  */
+  #con01 .textBox {
+    margin: -20px auto;
   }
   #con01 .textBox img {
-    width: 8%;
+    width: 10%;
   }
 
-  #con01 .bottom p {
-    margin-left: 2rem;
-    font-size: 2vw;
-  }
   /* con02 */
   #con02 {
     height: 110vh;
@@ -2663,44 +2592,9 @@ header .close {
   }
 }
 @media (max-width: 550px) {
+  /*con01*/
   #con01 {
-    height: 40vh;
-    padding-bottom: 60px;
-  }
-  #con01 .title h2 {
-    padding-top: 7rem;
-  }
-  /* con01 name */
-  #con01 .name {
-    position: absolute;
-
-    top: 50%;
-  }
-  #con01 .name img {
-    width: 30%;
-  }
-  /*con01 work  */
-  #con01 .work {
-    position: absolute;
-    right: -11%;
-    top: 25%;
-  }
-  #con01 .work img {
-    width: 35%;
-  }
-  /*con01 web */
-  #con01 .web {
-    top: 70%;
-  }
-  #con01 .web img {
-    width: 80%;
-  }
-  #con01 .title h2 {
-    padding-top: 8rem;
-  }
-  /*con01 bottom   */
-  #con01 .bottom {
-    margin-top: 40px;
+    height: 50vh;
   }
   #con02 {
     height: 100vh;
@@ -2790,19 +2684,31 @@ header .close {
     height: 120vh;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
+  /*con01*/
   #con01 {
-    height: 35vh;
+    height: 45vh;
+    padding-top: 4rem;
   }
   /*con01 work  */
   #con01 .work {
-    right: -15%;
-    top: 25%;
+    right: -13%;
+    top: -30%;
   }
-  /*con01 bottom   */
-  #con01 .bottom {
-    margin-top: 30px;
+
+  #con01 .work img {
+    width: 40%;
   }
+  /*con01 .bottom */
+  #con01 .bottom .line02 {
+    width: 60%;
+  }
+  #con01 .bottom p {
+    margin-left: 6vw;
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 450px) {
   /* con02 */
   #con02 {
     height: 170vw;
@@ -2909,43 +2815,7 @@ header .close {
   header .modal_menu .mo_menu {
     font-size: 7vw;
   }
-  /* con01 */
-  #con01 {
-    height: 30vh;
-  }
-  #con01 .title h2 {
-    padding-top: 7rem;
-  }
-  /* con01 name */
-  #con01 .name {
-    position: absolute;
 
-    top: 50%;
-  }
-  #con01 .name img {
-    width: 30%;
-  }
-  /*con01 work  */
-  #con01 .work {
-    position: absolute;
-    right: -18%;
-    top: 25%;
-  }
-  #con01 .work img {
-    width: 30%;
-  }
-  /* con01 web */
-  #con01 .web {
-    left: 20px;
-    top: 70%;
-  }
-  #con01 .web img {
-    width: 80%;
-  }
-  /*con01 bottom   */
-  #con01 .bottom {
-    margin-top: 30px;
-  }
   /* con02 */
   #con02 {
     height: 200vw;
@@ -3155,47 +3025,6 @@ header .close {
   }
 }
 @media (max-width: 350px) {
-  /* con01 */
-  #con01 {
-    height: 25vh;
-  }
-  /* con01 name */
-  #con01 .name {
-    position: absolute;
-
-    top: 50%;
-  }
-  #con01 .name img {
-    width: 30%;
-  }
-  /*con01 work  */
-  #con01 .work {
-    position: absolute;
-    right: -25%;
-    top: 30%;
-  }
-  #con01 .work img {
-    width: 20%;
-  }
-  /* con01 web */
-  #con01 .web {
-    position: absolute;
-    left: 5%;
-    top: 65%;
-  }
-  #con01 .web img {
-    width: 55%;
-  }
-  /* con01 textBox */
-  #con01 .textBox {
-    margin-top: -30px;
-  }
-  /*con01 bottom   */
-  #con01 .bottom {
-    margin-top: -5px;
-    padding: 0rem 0.5rem;
-    box-sizing: border-box;
-  }
   /* con02 */
   #con02 {
     height: 210vw;
