@@ -1425,7 +1425,7 @@ header .close {
   }
   /*con01*/
   #con01 {
-    padding-top: 7rem;
+    padding-top: 9rem;
     box-sizing: border-box;
   }
   #con01 .mainWrap {
@@ -1465,7 +1465,7 @@ header .close {
   }
   /*con01 bottom   */
   #con01 .bottom {
-    background-color: #ff4d00;
+    margin-top: 100px;
   }
   #con01 .bottom p {
     font-size: 2vw;
@@ -1716,6 +1716,7 @@ header .close {
   /*con01*/
   #con01 {
     height: 78vh;
+    padding-top: 5rem;
   }
 
   #con01 .name img {
@@ -1728,6 +1729,10 @@ header .close {
   }
   #con01 .work img {
     width: 70%;
+  }
+  /*con01 bottom   */
+  #con01 .bottom {
+    margin-top: 60px;
   }
   /* con02 */
   #con02 {
