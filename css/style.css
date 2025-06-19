@@ -2345,7 +2345,7 @@ header .close {
   }
   /*con01*/
   #con01 {
-    height: 45vh;
+    height: 60vh;
     margin-bottom: 30px;
   }
   #con01 .title h2 {
@@ -2664,7 +2664,7 @@ header .close {
 }
 @media (max-width: 550px) {
   #con01 {
-    height: 45vh;
+    height: 50vh;
   }
   #con01 .title h2 {
     padding-top: 7rem;
@@ -2791,7 +2791,7 @@ header .close {
 }
 @media (max-width: 450px) {
   #con01 {
-    height: 40vh;
+    height: 55vh;
   }
   /*con01 work  */
   #con01 .work {
