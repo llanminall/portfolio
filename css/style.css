@@ -2665,6 +2665,7 @@ header .close {
 @media (max-width: 550px) {
   #con01 {
     height: 40vh;
+    padding-bottom: 60px;
   }
   #con01 .title h2 {
     padding-top: 7rem;
