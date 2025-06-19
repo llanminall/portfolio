@@ -142,7 +142,7 @@ $(function () {
             start: "10% 0%",
             end: "10% 0%",
             scrub: 2,
-            markers: true,
+            // markers: true,
           },
         })
         .fromTo(
