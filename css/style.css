@@ -2346,6 +2346,7 @@ header .close {
   /*con01*/
   #con01 {
     height: 45vh;
+    margin-bottom: 30px;
   }
   #con01 .title h2 {
     padding-top: 8rem;
