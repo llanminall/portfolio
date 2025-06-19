@@ -2345,8 +2345,8 @@ header .close {
   }
   /*con01*/
   #con01 {
-    height: 60vh;
-    padding-bottom: 100px;
+    height: 45vh;
+    padding-bottom: 50px;
   }
   #con01 .title h2 {
     padding-top: 8rem;
@@ -2664,7 +2664,7 @@ header .close {
 }
 @media (max-width: 550px) {
   #con01 {
-    height: 50vh;
+    height: 40vh;
   }
   #con01 .title h2 {
     padding-top: 7rem;
@@ -2791,7 +2791,7 @@ header .close {
 }
 @media (max-width: 450px) {
   #con01 {
-    height: 55vh;
+    height: 35vh;
   }
   /*con01 work  */
   #con01 .work {
@@ -2910,7 +2910,7 @@ header .close {
   }
   /* con01 */
   #con01 {
-    height: 35vh;
+    height: 30vh;
   }
   #con01 .title h2 {
     padding-top: 7rem;
@@ -3156,7 +3156,7 @@ header .close {
 @media (max-width: 350px) {
   /* con01 */
   #con01 {
-    height: 30vh;
+    height: 25vh;
   }
   /* con01 name */
   #con01 .name {
