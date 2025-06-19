@@ -132,34 +132,6 @@ $(function () {
           { y: "0%", opacity: 1, ease: "none", duration: 5 },
           10
         );
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#con07",
-            start: "0% 50%",
-            end: "50% 50%",
-            scrub: 2,
-            // markers: true,
-          },
-        })
-        .fromTo(
-          "#con07 h2",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          1
-        )
-        .fromTo(
-          "#con07 .telContact",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          2
-        )
-        .fromTo(
-          "#con07 .textBox02",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          3
-        );
     },
 
     "(max-width:950px)": function () {
@@ -212,94 +184,6 @@ $(function () {
           { y: "50%", opacity: 0 },
           { y: "0%", opacity: 1, ease: "none", duration: 5 },
           10
-        );
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#con06",
-            start: "0% 50%",
-            end: "50% 50%",
-            scrub: 2,
-            // markers: true,
-          },
-        })
-        .fromTo(
-          "#con06 h2",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          1
-        )
-        .fromTo(
-          "#con06 .telContact",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          2
-        )
-        .fromTo(
-          "#con06 .textBox02",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          3
-        );
-    },
-    "(max-width:600px)": function () {
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#con06",
-            start: "180% 50%",
-            end: "200% 50%",
-            scrub: 2,
-            // markers: true,
-          },
-        })
-        .fromTo(
-          "#con06 h2",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          1
-        )
-        .fromTo(
-          "#con06 .telContact",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          2
-        )
-        .fromTo(
-          "#con06 .textBox02",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          3
-        );
-    },
-    "(max-width:400px)": function () {
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: "#con06",
-            start: "100% 0%",
-            end: "100% 0%",
-            scrub: 2,
-            markers: true,
-          },
-        })
-        .fromTo(
-          "#con06 h2",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          1
-        )
-        .fromTo(
-          "#con06 .telContact",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          2
-        )
-        .fromTo(
-          "#con06 .textBox02",
-          { y: "50%", opacity: 0 },
-          { y: "0%", opacity: 1, ease: "none", duration: 5 },
-          3
         );
     },
   });
@@ -423,4 +307,32 @@ $(function () {
   $("#con06 .proposalModal .close").on("click", function () {
     $("#con06 .proposalModal").hide();
   });
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: "#con07",
+        start: "0% 50%",
+        end: "50% 50%",
+        scrub: 2,
+        // markers: true,
+      },
+    })
+    .fromTo(
+      "#con07 h2",
+      { y: "50%", opacity: 0 },
+      { y: "0%", opacity: 1, ease: "none", duration: 5 },
+      1
+    )
+    .fromTo(
+      "#con07 .telContact",
+      { y: "50%", opacity: 0 },
+      { y: "0%", opacity: 1, ease: "none", duration: 5 },
+      2
+    )
+    .fromTo(
+      "#con07 .textBox02",
+      { y: "50%", opacity: 0 },
+      { y: "0%", opacity: 1, ease: "none", duration: 5 },
+      3
+    );
 });
