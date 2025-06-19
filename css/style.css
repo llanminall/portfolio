@@ -2507,7 +2507,7 @@ header .close {
   }
   /*#con05 .contBox01 bootton  */
   #con05 .contBox01 > li .button {
-    margin-left: 20rem;
+    margin-left: 18rem;
   }
   #con05 .contBox01 > li .button a {
     width: 150%;
@@ -2649,6 +2649,10 @@ header .close {
     height: 600px;
     margin-top: 4rem;
   }
+  /*#con05 .contBox01 bootton  */
+  #con05 .contBox01 > li .button {
+    margin-left: 12rem;
+  }
   /* con05 proposalWrap 화살표*/
   #con05 .arr {
     width: 9%;
@@ -2731,6 +2735,10 @@ header .close {
   #con04 .ilustModal .ilust02 {
     width: 90%;
     height: 70vh;
+  }
+  /*#con05 .contBox01 bootton  */
+  #con05 .contBox01 > li .button {
+    margin-left: 15rem;
   }
 }
 @media (max-width: 450px) {
