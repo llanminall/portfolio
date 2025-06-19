@@ -2815,7 +2815,34 @@ header .close {
   header .modal_menu .mo_menu {
     font-size: 7vw;
   }
-
+  /*con01*/
+  #con01 {
+    height: 40vh;
+  }
+  /*con01 name  */
+  #con01 .name {
+    top: 5%;
+  }
+  #con01 .name img {
+    width: 40%;
+  }
+  /*con01 web */
+  #con01 .web {
+    left: 0%;
+    top: 45%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    right: -17%;
+    top: -40%;
+  }
+  #con01 .work img {
+    width: 35%;
+  }
+  /*con01 textBox  */
+  #con01 .textBox {
+    margin: -30px auto;
+  }
   /* con02 */
   #con02 {
     height: 200vw;
@@ -3025,6 +3052,34 @@ header .close {
   }
 }
 @media (max-width: 350px) {
+  /*con01*/
+  #con01 {
+    height: 36vh;
+  }
+  /*con01 name  */
+  #con01 .name {
+    top: 5%;
+  }
+  #con01 .name img {
+    width: 40%;
+  }
+  /*con01 web */
+  #con01 .web {
+    left: 0%;
+    top: 45%;
+  }
+  /*con01 work  */
+  #con01 .work {
+    right: -20%;
+    top: -40%;
+  }
+  #con01 .work img {
+    width: 30%;
+  }
+  /*con01 textBox  */
+  #con01 .textBox {
+    margin: -30px auto;
+  }
   /* con02 */
   #con02 {
     height: 210vw;
