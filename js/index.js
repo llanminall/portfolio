@@ -51,11 +51,11 @@ $(function () {
     }
   });
   // header bar
-  $(".bar").on("click", function () {
+  $(" .bar").on("click", function () {
     $("header .modal_menu").fadeIn(200);
     $("header .modal_menu").css({ display: "flex" });
   });
-  $(".close").on("click", function () {
+  $(" .close").on("click", function () {
     $("header .modal_menu").fadeOut(200);
   });
   gsap.registerPlugin(ScrollTrigger);
@@ -142,7 +142,7 @@ $(function () {
             start: "10% 0%",
             end: "10% 0%",
             scrub: 2,
-            // markers: true,
+            markers: true,
           },
         })
         .fromTo(
@@ -191,7 +191,7 @@ $(function () {
   $("#con03 .txtBox03 img   ").on("click", function () {
     $("#con03 .modalCareer").show();
   });
-  $("#con03 .modalCareer .close").on("click", function () {
+  $("#con03 .modalCareer ").on("click", function () {
     $("#con03 .modalCareer").hide();
   });
 
