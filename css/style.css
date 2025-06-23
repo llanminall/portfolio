@@ -187,7 +187,7 @@ header .close {
 #con01 .work {
   position: absolute;
   right: 8%;
-  top: -10%;
+  top: -20%;
   animation: ani02 1s linear infinite;
 }
 @keyframes ani02 {
