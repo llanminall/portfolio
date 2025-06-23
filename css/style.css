@@ -2274,6 +2274,13 @@ header .close {
     display: flex;
     margin: 0px auto;
   }
+   /*con06 .cloneWrap .contBox .left .screen .folio*/
+  #con06 .cloneWrap .contBox .left .screen .folio {
+    height: 42%;
+left:64px;
+    top: 112px;
+  }
+}
   /* con07 contact  li h2*/
   #con07 .contact li h2 {
     font-size: 8vw;
@@ -2301,8 +2308,9 @@ header .close {
   }
   /*con06 .cloneWrap .contBox .left .screen .folio*/
   #con06 .cloneWrap .contBox .left .screen .folio {
+    height: 42%;
     left: 60px;
-    top: 109px;
+    top: 105px;
   }
 }
 @media (max-width: 600px) {
@@ -2566,6 +2574,10 @@ header .close {
   #con06 .cloneWrap .contBox .right .txtBox .en4 {
     font-size: 3vw;
   }
+  #con06 .cloneWrap .contBox .left .screen .folio {
+    left: 47px;
+    top: 90px;
+  }
 
   /* con07  */
   #con07 {
@@ -2763,6 +2775,10 @@ header .close {
   /*#con05 .contBox01 bootton  */
   #con05 .contBox01 > li .button {
     margin-left: 15rem;
+  }
+  #con06 .cloneWrap .contBox .left .screen .folio {
+    left: 39px;
+    top: 75px;
   }
 }
 @media (max-width: 450px) {
@@ -3294,10 +3310,10 @@ header .close {
   }
   /* con06 .cloneWrap .contBox .left .screen .folio  */
   #con06 .cloneWrap .contBox .left .screen .folio {
-    width: 70%;
-    height: 38%;
-    left: 25px;
-    top: 56px;
+    width: 71%;
+    height: 40%;
+    left: 28px;
+    top: 60px;
   }
   /* con06 .cloneWrap .contBox .right .tit */
   #con06 .cloneWrap .contBox .right .tit {
@@ -3327,15 +3343,16 @@ header .close {
     font-size: 4vw;
     margin-bottom: 20px;
   }
-  /* con06  */
+
+  /* con07  */
   #con07 {
     height: 100vh;
   }
-  /* con06 contact  li h2*/
+  /* con07 contact  li h2*/
   #con07 .contact li h2 {
     margin-top: 0rem;
   }
-  /* con06 textBox02 */
+  /* con07 textBox02 */
   #con07 .textBox02 {
     width: 90%;
     height: 25vh;
