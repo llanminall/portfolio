@@ -1659,6 +1659,7 @@ header .close {
     width: 40%;
     margin-top: 30px;
   }
+  /*   con06 .cloneWrap .contBox .left .screen .folio */
   #con06 .cloneWrap .contBox .left .screen .folio {
     left: 73px;
     top: 122px;
@@ -1668,6 +1669,12 @@ header .close {
   #con06 .cloneWrap .contBox .right .tit {
     margin-top: 70px;
   }
+  /*   con06 .cloneWrap .contBox .left .screen .folio */
+#con06 .cloneWrap .contBox .left .screen .folio {
+    left: 65px;
+    top: 115px;
+  }
+
   /* con07  */
   #con07 {
     height: 100vh;
