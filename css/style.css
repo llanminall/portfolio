@@ -1248,14 +1248,7 @@ header .close {
   background: rgba(0, 0, 0, 0.3);
   display: none;
 }
-#con06 .proposalModal .close {
-  font-size: 4rem;
-  position: absolute;
-  right: 20px;
-  top: 0px;
-  color: #fff;
-  z-index: 2000;
-}
+
 #con06 .scrollBar {
   width: 50%;
   height: 750px;

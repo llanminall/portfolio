@@ -304,7 +304,7 @@ $(function () {
   $("#con06 .view01  ").on("click", function () {
     $("#con06 .proposalModal").show();
   });
-  $("#con06 .proposalModal .close").on("click", function () {
+  $("#con06 .proposalModal").on("click", function () {
     $("#con06 .proposalModal").hide();
   });
   gsap
