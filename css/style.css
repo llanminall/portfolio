@@ -1293,6 +1293,7 @@ header .close {
 #con07 {
   width: 100%;
   height: 100vh;
+  background-color: #217af4;
 }
 /* con07 contact  */
 #con07 .contact {
@@ -1304,18 +1305,18 @@ header .close {
   box-sizing: border-box;
 }
 /* con07 contact  li*/
-#con07 .contact li {
+#con07 .contact > li {
   width: 100%;
   position: relative;
 }
 /* con07 contact  li h2*/
-#con07 .contact li h2 {
-  font-size: 6vw;
+#con07 .contact > li h2 {
+  font-size: 6.5vw;
   font-family: "PyeongChangPeace-Bold";
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-#con07 .contact li span {
+#con07 .contact > li span {
   display: block;
 }
 
@@ -1332,7 +1333,7 @@ header .close {
 #con07 .textBox02 p {
   font-size: 1.3vw;
   letter-spacing: 3px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 /*con07 textBox02 txt02  */
 #con07 .textBox02 .txt02 {
@@ -1399,7 +1400,7 @@ header .close {
 
   justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 #con07 .bottom .line02 {
   width: 70%;
@@ -1663,7 +1664,7 @@ header .close {
     margin-top: 70px;
   }
   /*   con06 .cloneWrap .contBox .left .screen .folio */
-#con06 .cloneWrap .contBox .left .screen .folio {
+  #con06 .cloneWrap .contBox .left .screen .folio {
     left: 65px;
     top: 115px;
   }
@@ -2274,13 +2275,13 @@ header .close {
     display: flex;
     margin: 0px auto;
   }
-   /*con06 .cloneWrap .contBox .left .screen .folio*/
+  /*con06 .cloneWrap .contBox .left .screen .folio*/
   #con06 .cloneWrap .contBox .left .screen .folio {
     height: 42%;
-left:64px;
+    left: 64px;
     top: 112px;
   }
-}
+
   /* con07 contact  li h2*/
   #con07 .contact li h2 {
     font-size: 8vw;
@@ -2291,6 +2292,7 @@ left:64px;
     margin-top: 100px;
   }
 }
+
 @media (max-width: 750px) {
   #con03 {
     /* height: 65vh; */
